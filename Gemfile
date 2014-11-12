@@ -53,6 +53,8 @@ gem 'validates_timeliness', '~> 3.0'
 gem 'ckeditor'
 gem 'turbolinks'
 gem 'coffee-rails'
+gem 'wysiwyg-rails'
+gem 'font-awesome-rails'
 
 group :development do
   gem 'web-console', '2.0.0.beta2'
