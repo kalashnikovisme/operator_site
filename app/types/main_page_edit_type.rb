@@ -1,7 +1,5 @@
-class PageEditType < Page
+class MainPageEditType < Page
   include ApplicationType
-
-  validates :body, presence: true
 
   permit :title, :body, :slug, :view
 end
