@@ -79,3 +79,7 @@ group :test do
   gem 'tconsole', github: 'ulmic/tconsole', branch: 'rails4'
   gem 'wrong'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
