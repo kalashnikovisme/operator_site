@@ -1,5 +1,5 @@
 class Web::WelcomeController < Web::ApplicationController
   def index
-    redirect_to "/pages/welcome"
+    @page = Page.find_by_slug :welcome
   end
 end
