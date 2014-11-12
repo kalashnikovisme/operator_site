@@ -2,3 +2,9 @@ ru:
   application:
     attributes:
       name: Сайт Оператора
+  layouts:
+    web:
+      admin:
+        shared:
+          navbar:
+            panel: Админка

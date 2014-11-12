@@ -1,0 +1,18 @@
+%header.navbar.navbar-default
+  .navbar-header
+    %button.navbar-toggle{"type" => "button", "data-toggle" => "collapse", "data-target" => ".navbar-collapse"}
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+    %a.navbar-brand{ href: admin_root_path }
+      %span
+        = t('application.attributes.name')
+      |
+      %span
+        = t('.panel')
+  .navbar-collapse.collapse
+    %ul.nav.navbar-nav
+    %ul.nav.navbar-nav.pull-right
+      -#= menu_item new_session_path do
+        = t('.sign_in')
+        %span.glyphicon.log_in
