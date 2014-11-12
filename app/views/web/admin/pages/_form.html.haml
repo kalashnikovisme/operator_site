@@ -5,6 +5,9 @@
     = simple_form_for @page, url: { controller: 'web/admin/pages', action: action, id: @page.id }, html: { class: 'form-horizontal' } do |f|
       = f.input :title, as: :string
       = f.input :body
-      = f.input :slug, as: :string
+      - if slug_disabled
+        = f.input :slug, as: :hidden
+      - else
+        = f.input :slug, as: :string
 
       = f.button :submit
