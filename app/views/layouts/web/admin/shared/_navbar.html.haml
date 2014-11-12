@@ -12,7 +12,7 @@
         = t('.panel')
   .navbar-collapse.collapse
     %ul.nav.navbar-nav
+      %li
+        = link_to admin_pages_path do
+          = t('.pages')
     %ul.nav.navbar-nav.pull-right
-      -#= menu_item new_session_path do
-        = t('.sign_in')
-        %span.glyphicon.log_in
