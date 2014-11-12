@@ -1,1 +1,1 @@
-page = Page.find_or_create_by slug: :welcome
+Page.find_or_create_by slug: 'welcome'
