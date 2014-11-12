@@ -1,0 +1,9 @@
+ru:
+  activerecord:
+    models:
+      page: Страница
+    attributes:
+      page:
+        title: Название
+        body: Тело страницы
+        slug: Адрес страницы

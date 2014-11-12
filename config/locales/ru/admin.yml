@@ -1,0 +1,17 @@
+ru:
+  web:
+    admin:
+      pages:
+        index:
+          title: Страницы
+        new:
+          title: Создать страницу
+        edit:
+          title: Редактировать страницу
+  layouts:
+    web:
+      admin:
+        shared:
+          navbar:
+            panel: Админка
+            pages: Страницы
