@@ -1,0 +1,13 @@
+ru:
+  web:
+    admin:
+      pages:
+        index:
+          title: Страницы
+  layouts:
+    web:
+      admin:
+        shared:
+          navbar:
+            panel: Админка
+            pages: Страницы

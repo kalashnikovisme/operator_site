@@ -1,0 +1,8 @@
+ru:
+  helpers:
+    actions: Действия
+    links:
+      edit: Изменить
+      destroy: Удалить
+      confirm: Подтвердить
+      new: Добавить
