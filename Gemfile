@@ -55,6 +55,7 @@ gem 'turbolinks'
 gem 'coffee-rails'
 gem 'wysiwyg-rails'
 gem 'font-awesome-rails'
+gem 'auto_html'
 
 group :development do
   gem 'web-console', '2.0.0.beta2'

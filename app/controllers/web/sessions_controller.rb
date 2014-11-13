@@ -1,4 +1,6 @@
 class Web::SessionsController < Web::ApplicationController
+  skip_before_filter :show_video
+  layout 'web/admin/application'
   # FIXME forbid access if the user is signed in
   def new
     @session = UserSignInType.new
