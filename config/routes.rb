@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     namespace :admin do
       root to: 'welcome#index'
       resources :pages, except: :show
+      resources :videos, except: :show
     end
   end
 end

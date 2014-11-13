@@ -1,1 +1,10 @@
-= render partial: 'web/admin/pages/form', locals: { action: :update, slug_disabled: true  }
+= javascript_include_tag 'web/pages'
+
+.row
+  .col-md-10
+    = simple_form_for @page, url: { controller: 'web/admin/pages', action: :update, id: @page.id }, html: { class: 'form-horizontal' } do |f|
+      = f.input :title, as: :string
+      = f.input :body
+      = f.input :slug, as: :hidden
+
+      = f.button :submit
