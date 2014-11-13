@@ -2,8 +2,11 @@ ru:
   activerecord:
     models:
       page: Страница
+      video: Видео
     attributes:
       page:
         title: Название
         body: Тело страницы
         slug: Адрес страницы
+      video:
+        link: Ссылка на Youtube
