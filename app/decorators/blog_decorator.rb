@@ -5,4 +5,8 @@ class BlogDecorator < Draper::Decorator
     "#{model.body.first(250)}..."
   end
 
+  def long_lead
+    "#{model.body.first(600)}..."
+  end
+
 end
