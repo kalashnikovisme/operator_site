@@ -1,0 +1,10 @@
+= title
+= stylesheet_link_tag 'web/blogs'
+.index
+  - @blogs.each do |blog|
+    .blog.link{ data: { href: blog_path(blog) } }
+      .title
+        = blog.title
+      .body
+        = image_tag blog.photo
+        != strip_tags blog.long_lead

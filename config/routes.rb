@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'web/welcome#index'
   scope module: :web do
+    resources :blogs, only: [ :show, :index ]
     resources :pages, only: [] do
       collection do
         get ':slug' => 'pages#show'
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
     namespace :admin do
       root to: 'welcome#index'
       resources :pages, except: :show
+      resources :blogs, except: :show
       resources :videos, except: :show
     end
   end

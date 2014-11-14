@@ -1,4 +1,5 @@
-= stylesheet_link_tag 'web/videos'
-= javascript_include_tag 'web/videos'
+- if @video
+  = stylesheet_link_tag 'web/videos'
+  = javascript_include_tag 'web/videos'
 
-= @video.from_youtube
+  = @video.from_youtube

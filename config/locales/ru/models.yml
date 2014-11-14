@@ -3,6 +3,7 @@ ru:
     models:
       page: Страница
       video: Видео
+      blog: Блог
     attributes:
       page:
         title: Название
@@ -10,3 +11,7 @@ ru:
         slug: Адрес страницы
       video:
         link: Ссылка на Youtube
+      blog:
+        title: Название
+        body: Тело блога
+        photo: Главное фото
