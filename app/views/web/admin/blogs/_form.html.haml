@@ -5,4 +5,5 @@
     = simple_form_for @blog, url: { controller: 'web/admin/blogs', action: action }, html: { class: 'form-horizontal' } do |f|
       = f.input :title, as: :string
       = f.input :body
+      = f.input :photo
       = f.button :submit

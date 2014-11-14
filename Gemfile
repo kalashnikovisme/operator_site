@@ -35,7 +35,6 @@ gem "draper"
 gem 'russian'
 gem 'monadic'
 gem 'carrierwave'
-
 gem 'ransack'
 gem 'kaminari'
 gem 'virtus'
