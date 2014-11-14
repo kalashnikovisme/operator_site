@@ -15,6 +15,13 @@ ru:
           title: Создать видео
         edit:
           title: Редактировать видео
+      blogs:
+        index:
+          title: Блоги
+        new:
+          title: Создать запись в блог
+        edit:
+          title: Редактировать запись блога
   layouts:
     web:
       admin:
@@ -23,3 +30,4 @@ ru:
             panel: Админка
             pages: Страницы
             videos: Видео
+            blogs: Блоги
