@@ -29,6 +29,13 @@ ru:
           title: Создать акцию
         edit:
           title: Редактировать акцию
+      banners:
+        index:
+          title: Баннеры
+        new:
+          title: Создать баннер
+        edit:
+          title: Редактировать баннер
   layouts:
     web:
       admin:
@@ -39,3 +46,4 @@ ru:
             videos: Видео
             blogs: Блоги
             propositions: Акции
+            banners: Баннеры
