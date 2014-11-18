@@ -3,6 +3,7 @@ require 'test_helper'
 class Web::BlogsControllerTest < ActionController::TestCase
   setup do
     @blog = create :blog
+    create :proposition
   end
 
   test 'should get show' do
