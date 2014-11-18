@@ -1,4 +1,4 @@
-class Web::Admin::PropositionsController < ApplicationController
+class Web::Admin::PropositionsController < Web::Admin::ApplicationController
   def index
     @propositions = Proposition.all
   end
