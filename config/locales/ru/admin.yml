@@ -22,6 +22,13 @@ ru:
           title: Создать запись в блог
         edit:
           title: Редактировать запись блога
+      propositions:
+        index:
+          title: Акции
+        new:
+          title: Создать акцию
+        edit:
+          title: Редактировать акцию
   layouts:
     web:
       admin:
@@ -31,3 +38,4 @@ ru:
             pages: Страницы
             videos: Видео
             blogs: Блоги
+            propositions: Акции
