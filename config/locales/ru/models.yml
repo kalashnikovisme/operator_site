@@ -20,3 +20,8 @@ ru:
         text: Текст акции
         begin_date: Дата начала
         end_date: Дата окончания
+      banner:
+        image: Изображение
+        url: Ссылка баннера
+        state: Статус
+        state_event: Статус

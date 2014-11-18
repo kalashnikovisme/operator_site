@@ -15,9 +15,10 @@
     - @banners.each do |banner|
       %tr
         %td= link_to banner.id, edit_admin_banner_path(banner)
-        %td= image_tag banner.image
+        %td= image_tag banner.image.small
         %td= link_to banner.url, banner.url
         %td= banner.state
+        %td= banner.created_at
         %td
           = link_to t('.edit', default: t("helpers.links.edit")), edit_admin_banner_path(banner), class: 'btn btn-warning btn-xs'
           = link_to t('.destroy', default: t("helpers.links.destroy")), admin_banner_path(banner), method: :delete, data: { confirm: t('.confirm', default: t("helpers.links.confirm", default: 'Are you sure?')) }, class: 'btn btn-xs btn-danger'
