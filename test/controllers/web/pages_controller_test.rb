@@ -4,6 +4,7 @@ class Web::PagesControllerTest < ActionController::TestCase
   setup do
     @page = create :page
     create :video
+    create :proposition
   end
   test 'should get show' do
     get :show, slug: @page.slug

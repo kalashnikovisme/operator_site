@@ -3,6 +3,7 @@ require 'test_helper'
 class Web::WelcomeControllerTest < ActionController::TestCase
   setup do
     create :video
+    create :proposition
   end
   test 'should get index' do
     main_page = create :page
