@@ -4,6 +4,7 @@ ru:
       page: Страница
       video: Видео
       blog: Блог
+      proposition: Акция
     attributes:
       page:
         title: Название
@@ -15,3 +16,7 @@ ru:
         title: Название
         body: Тело блога
         photo: Главное фото
+      proposition:
+        text: Текст акции
+        begin_date: Дата начала
+        end_date: Дата окончания
