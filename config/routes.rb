@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       resources :blogs, except: :show
       resources :videos, except: :show
       resources :propositions, except: :show
+      resources :banners, except: :show
     end
   end
 end
