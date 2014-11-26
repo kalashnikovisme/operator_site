@@ -10,4 +10,4 @@ unless Rails.env.development?
   Rails.application.config.assets.precompile += %w( vendor.js vendor.css *.jpg *.png )
 end
 Rails.application.config.assets.precompile += %w( web/* )
-Rails.application.config.assets.precompile += %w( js/* demo/* font-awesome/* css/*  )
+Rails.application.config.assets.precompile += %w( *.jpg *.png *.js* *.css* *.mp4 *.ttf *.svg )
