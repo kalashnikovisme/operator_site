@@ -8,6 +8,7 @@
     / Bootstrap Core CSS
     = javascript_include_tag 'application'
     = stylesheet_link_tag :application
+    = stylesheet_link_tag 'style'
     = stylesheet_link_tag 'bootstrap.min'
     = javascript_include_tag 'bootstrap.min'
     / Retina.js - Load first for faster HQ mobile images.
@@ -218,7 +219,7 @@
                     %li
                       %a{href: "#"}
                         %i.fa.fa-github.fa-fw
-    %aside.cta-quote{style: "background-image: url('assets/bg-aside.jpg');"}
+    %aside.cta-quote.first
       .container.wow.fadeIn
         .row
           .col-md-10.col-md-offset-1
@@ -279,7 +280,7 @@
         %hr.colored/
         %p Examples of our work which represent our design and marketing capabilities.
     %section.portfolio-carousel.wow.fadeIn
-      .item{style: "background-image: url('assets/portfolio/bg-1.jpg')"}
+      .item.first
         .container-fluid
           .row
             .col-md-4.col-md-push-8
@@ -293,7 +294,7 @@
                   %i.fa.fa-long-arrow-right.fa-fw
             .col-md-8.col-md-pull-4.hidden-xs
               = image_tag "portfolio/mobile-screens.png", class: 'img-responsive portfolio-image'
-      .item{style: "background-image: url('assets/portfolio/bg-2.jpg')"}
+      .item.second
         .container-fluid
           .row
             .col-md-4.col-md-push-8
@@ -307,7 +308,7 @@
                   %i.fa.fa-long-arrow-right.fa-fw
             .col-md-8.col-md-pull-4.hidden-xs
               = image_tag "portfolio/tablet-screens.png", class: 'img-responsive portfolio-image', alt: ""
-      .item{style: "background-image: url('assets/portfolio/bg-3.jpg')"}
+      .item.third
         .container-fluid
           .row
             .col-md-4.col-md-push-8
@@ -321,7 +322,7 @@
                   %i.fa.fa-long-arrow-right.fa-fw
             .col-md-8.col-md-pull-4.hidden-xs
               = image_tag "portfolio/mobile-screens.png", class: 'img-responsive portfolio-image', alt: ""
-      .item{style: "background-image: url('portfolio/bg-4.jpg')"}
+      .item.fourth
         .container-fluid
           .row
             .col-md-4.col-md-push-8
@@ -492,7 +493,7 @@
                           %i.fa.fa-star
                           %i.fa.fa-star
                           %i.fa.fa-star
-    %section#pricing.pricing{style: "background-image: url('bg-pricing.jpg')"}
+    %section#pricing.pricing
       .container.wow.fadeIn
         .row.text-center
           .col-lg-12
@@ -593,7 +594,7 @@
                 .form-group.col-xs-12
                   %button.btn.btn-outline-dark{type: "submit"} Send
     %a.btn.btn-block.btn-full-width{href: "https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3"} Buy Vitality Now!
-    %footer.footer{style: "background-image: url('bg-footer.jpg')"}
+    %footer.footer
       .container.text-center
         .row
           .col-md-4.contact-details
@@ -632,7 +633,7 @@
             %p.small © 2014 Start Bootstrap Themes
     / Portfolio Modals
     / Example Modal 1
-    #portfolioModal1.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('portfolio/bg-1.jpg')", tabindex: "-1"}
+    #portfolioModal1.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", tabindex: "-1"}
       .modal-content
         .close-modal{"data-dismiss" => "modal"}
           .lr
@@ -665,7 +666,7 @@
                   %i.fa.fa-times
                   Close
     / Example Modal 2
-    #portfolioModal2.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('portfolio/bg-2.jpg')", tabindex: "-1"}
+    #portfolioModal2.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog",  tabindex: "-1"}
       .modal-content
         .close-modal{"data-dismiss" => "modal"}
           .lr
@@ -698,7 +699,7 @@
                   %i.fa.fa-times
                   Close
     / Example Modal 3
-    #portfolioModal3.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('portfolio/bg-3.jpg')", tabindex: "-1"}
+    #portfolioModal3.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog",  tabindex: "-1"}
       .modal-content
         .close-modal{"data-dismiss" => "modal"}
           .lr
@@ -731,7 +732,7 @@
                   %i.fa.fa-times
                   Close
     / Example Modal 4
-    #portfolioModal4.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('portfolio/bg-4.jpg')", tabindex: "-1"}
+    #portfolioModal4.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog",  tabindex: "-1"}
       .modal-content
         .close-modal{"data-dismiss" => "modal"}
           .lr

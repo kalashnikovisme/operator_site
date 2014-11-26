@@ -80,8 +80,8 @@ $('.gallery-link').magnificPopup({
 // Formstone Wallpaper - Video Background Settings
 $("header.video").wallpaper({
     source: {
-        poster: "assets/bg-mobile-fallback.jpg",
-        mp4: "assets/camera.mp4"
+        poster: "/bg-mobile-fallback.jpg",
+        mp4: "/camera.mp4"
     }
 });
 

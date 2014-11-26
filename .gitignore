@@ -22,3 +22,6 @@ pickle-email-*.html
 config/initializers/secret_token.rb
 *.sqlite3-journal
 *~
+!public/camera.mp4
+!public/bg-mobile-fallback.jpg
+!public/fontawesome-webfont.svg
