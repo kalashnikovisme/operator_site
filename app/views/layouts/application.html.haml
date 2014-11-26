@@ -8,6 +8,8 @@
     / Bootstrap Core CSS
     = javascript_include_tag 'application'
     = stylesheet_link_tag :application
+    = stylesheet_link_tag 'bootstrap.min'
+    = javascript_include_tag 'bootstrap.min'
     / Retina.js - Load first for faster HQ mobile images.
     = javascript_include_tag 'js/plugins/retina/retina.min.js'
     / Font Awesome
@@ -60,7 +62,7 @@
             %span.icon-bar
             %span.icon-bar
           %a.navbar-brand{href: "#page-top"}
-            %img.img-responsive{alt: "", src: "assets/logo.png"}/
+            = image_tag "logo.png", class: 'img-responsive', alt: ""
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
@@ -82,7 +84,7 @@
     %header.video
       .overlay
       .intro-content
-        %img.img-responsive.img-centered{alt: "", src: "assets/profile.png"}/
+        = image_tag "profile.png", class: 'img-responsive img-centered', alt: ""
         .brand-name Vitality
         %hr.colored/
         .brand-name-subtext by Start Bootstrap
@@ -128,7 +130,7 @@
           .col-lg-12
             .about-carousel
               .item
-                %img.img-responsive{alt: "", src: "assets/people/1.jpg"}/
+                = image_tag "people/1.jpg", class: 'img-responsive', alt: ""
                 .caption
                   %h3 Patricia West
                   %hr.colored/
@@ -144,7 +146,7 @@
                       %a{href: "#"}
                         %i.fa.fa-linkedin.fa-fw
               .item
-                %img.img-responsive{alt: "", src: "assets/people/2.jpg"}/
+                = image_tag "people/2.jpg", class: 'img-responsive', alt: ""
                 .caption
                   %h3 Howard Scott
                   %hr.colored/
@@ -160,7 +162,7 @@
                       %a{href: "#"}
                         %i.fa.fa-linkedin.fa-fw
               .item
-                %img.img-responsive{alt: "", src: "assets/people/3.jpg"}/
+                = image_tag "people/3.jpg", class: 'img-responsive', alt: ""
                 .caption
                   %h3 Kate Williams
                   %hr.colored/
@@ -179,7 +181,7 @@
                       %a{href: "#"}
                         %i.fa.fa-dribbble.fa-fw
               .item
-                %img.img-responsive{alt: "", src: "assets/people/4.jpg"}/
+                = image_tag "people/4.jpg", class: 'img-responsive', alt: ""
                 .caption
                   %h3 Amy Vanderbute
                   %hr.colored/
@@ -198,7 +200,7 @@
                       %a{href: "#"}
                         %i.fa.fa-dribbble.fa-fw
               .item
-                %img.img-responsive{alt: "", src: "assets/people/5.jpg"}/
+                = image_tag "people/5.jpg", class: 'img-responsive', alt: ""
                 .caption
                   %h3 Jeremy Davidson
                   %hr.colored/
@@ -282,7 +284,7 @@
           .row
             .col-md-4.col-md-push-8
               .project-details
-                %img.img-responsive.client-logo{alt: "", src: "assets/client-logos/logo-1.png"}/
+                = image_tag "client-logos/logo-1.png", class: 'img-responsive client-logo', alt: ""
                 %span.project-name Project Name
                 %span.project-description Branding, Website Design
                 %hr.colored/
@@ -290,13 +292,13 @@
                   View Details
                   %i.fa.fa-long-arrow-right.fa-fw
             .col-md-8.col-md-pull-4.hidden-xs
-              %img.img-responsive.portfolio-image{alt: "", src: "assets/portfolio/mobile-screens.png"}/
+              = image_tag "portfolio/mobile-screens.png", class: 'img-responsive portfolio-image'
       .item{style: "background-image: url('assets/portfolio/bg-2.jpg')"}
         .container-fluid
           .row
             .col-md-4.col-md-push-8
               .project-details
-                %img.img-responsive.client-logo{alt: "", src: "assets/client-logos/logo-2.png"}/
+                = image_tag "client-logos/logo-2.png", class: 'img-responsive client-logo', alt: ""
                 %span.project-name Project Name
                 %span.project-description Branding, Website Design
                 %hr.colored/
@@ -304,13 +306,13 @@
                   View Details
                   %i.fa.fa-long-arrow-right.fa-fw
             .col-md-8.col-md-pull-4.hidden-xs
-              %img.img-responsive.portfolio-image{alt: "", src: "assets/portfolio/tablet-screens.png"}/
+              = image_tag "portfolio/tablet-screens.png", class: 'img-responsive portfolio-image', alt: ""
       .item{style: "background-image: url('assets/portfolio/bg-3.jpg')"}
         .container-fluid
           .row
             .col-md-4.col-md-push-8
               .project-details
-                %img.img-responsive.client-logo{alt: "", src: "assets/client-logos/logo-1.png"}/
+                = image_tag "client-logos/logo-1.png", class: 'img-responsive client-logo'
                 %span.project-name Project Name
                 %span.project-description Branding, Website Design
                 %hr.colored/
@@ -318,13 +320,13 @@
                   View Details
                   %i.fa.fa-long-arrow-right.fa-fw
             .col-md-8.col-md-pull-4.hidden-xs
-              %img.img-responsive.portfolio-image{alt: "", src: "assets/portfolio/mobile-screens.png"}/
-      .item{style: "background-image: url('assets/portfolio/bg-4.jpg')"}
+              = image_tag "portfolio/mobile-screens.png", class: 'img-responsive portfolio-image', alt: ""
+      .item{style: "background-image: url('portfolio/bg-4.jpg')"}
         .container-fluid
           .row
             .col-md-4.col-md-push-8
               .project-details
-                %img.img-responsive.client-logo{alt: "", src: "assets/client-logos/logo-2.png"}/
+                = image_tag "client-logos/logo-2.png", class: 'img-responsive client-logo', alt: ""
                 %span.project-name Project Name
                 %span.project-description Branding, Website Design
                 %hr.colored/
@@ -332,7 +334,7 @@
                   View Details
                   %i.fa.fa-long-arrow-right.fa-fw
             .col-md-8.col-md-pull-4.hidden-xs
-              %img.img-responsive.portfolio-image{alt: "", src: "assets/portfolio/tablet-screens.png"}/
+              = image_tag "portfolio/tablet-screens.png", class: 'img-responsive portfolio-image'
     %section
       .container.text-center.wow.fadeIn
         %h2 Portfolio
@@ -355,7 +357,7 @@
             #portfoliolist
               .portfolio.identity{"data-cat" => "identity", "data-toggle" => "modal", href: "#portfolioModal1"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/identity/1.jpg"}/
+                  = image_tag "creative/portfolio/items/identity/1.jpg"
                   .caption
                     .caption-text
                       %a.text-title Generic Inc.
@@ -363,7 +365,7 @@
                     .caption-bg
               .portfolio.web{"data-cat" => "web", "data-toggle" => "modal", href: "#portfolioModal2"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/web/1.jpg"}/
+                  = image_tag "creative/portfolio/items/web/1.jpg"
                   .caption
                     .caption-text
                       %a.text-title Brands
@@ -371,7 +373,7 @@
                     .caption-bg
               .portfolio.graphic{"data-cat" => "graphic", "data-toggle" => "modal", href: "#portfolioModal3"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/graphic/1.jpg"}/
+                  = image_tag "creative/portfolio/items/graphic/1.jpg"
                   .caption
                     .caption-text
                       %a.text-title Excellence
@@ -379,7 +381,7 @@
                     .caption-bg
               .portfolio.web{"data-cat" => "web", "data-toggle" => "modal", href: "#portfolioModal4"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/web/2.jpg"}/
+                  = image_tag "creative/portfolio/items/web/2.jpg"
                   .caption
                     .caption-text
                       %a.text-title YouTV
@@ -387,7 +389,7 @@
                     .caption-bg
               .portfolio.graphic{"data-cat" => "graphic", "data-toggle" => "modal", href: "#portfolioModal1"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/graphic/2.jpg"}/
+                  = image_tag "creative/portfolio/items/graphic/2.jpg"
                   .caption
                     .caption-text
                       %a.text-title Office Supplies
@@ -395,7 +397,7 @@
                     .caption-bg
               .portfolio.web{"data-cat" => "web", "data-toggle" => "modal", href: "#portfolioModal2"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/web/3.jpg"}/
+                  = image_tag "creative/portfolio/items/web/3.jpg"
                   .caption
                     .caption-text
                       %a.text-title Fooder
@@ -403,7 +405,7 @@
                     .caption-bg
               .portfolio.graphic{"data-cat" => "graphic", "data-toggle" => "modal", href: "#portfolioModal3"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/graphic/3.jpg"}/
+                  = image_tag "creative/portfolio/items/graphic/3.jpg"
                   .caption
                     .caption-text
                       %a.text-title Mountain Tea
@@ -411,7 +413,7 @@
                     .caption-bg
               .portfolio.graphic{"data-cat" => "graphic", "data-toggle" => "modal", href: "#portfolioModal4"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/graphic/4.jpg"}/
+                  = image_tag "creative/portfolio/items/graphic/4.jpg"
                   .caption
                     .caption-text
                       %a.text-title Checkmark
@@ -419,7 +421,7 @@
                     .caption-bg
               .portfolio.identity{"data-cat" => "identity", "data-toggle" => "modal", href: "#portfolioModal1"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/identity/2.jpg"}/
+                  = image_tag "creative/portfolio/items/identity/2.jpg"
                   .caption
                     .caption-text
                       %a.text-title Demish
@@ -427,7 +429,7 @@
                     .caption-bg
               .portfolio.web{"data-cat" => "web", "data-toggle" => "modal", href: "#portfolioModal2"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/web/4.jpg"}/
+                  = image_tag "creative/portfolio/items/web/4.jpg"
                   .caption
                     .caption-text
                       %a.text-title OneRepublic
@@ -435,7 +437,7 @@
                     .caption-bg
               .portfolio.graphic{"data-cat" => "graphic", "data-toggle" => "modal", href: "#portfolioModal3"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/graphic/5.jpg"}/
+                  = image_tag "creative/portfolio/items/graphic/5.jpg"
                   .caption
                     .caption-text
                       %a.text-title Postable
@@ -443,7 +445,7 @@
                     .caption-bg
               .portfolio.identity{"data-cat" => "identity", "data-toggle" => "modal", href: "#portfolioModal4"}
                 .portfolio-wrapper
-                  %img{alt: "", src: "assets/creative/portfolio/items/identity/3.jpg"}/
+                  = image_tag "creative/portfolio/items/identity/3.jpg"
                   .caption
                     .caption-text
                       %a.text-title Simpli Nota
@@ -462,7 +464,7 @@
                     %p.quote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?
                     .testimonial-info
                       .testimonial-img
-                        %img.img-circle.img-responsive{alt: "", src: "assets/testimonials/1.jpg"}/
+                        = image_tag "testimonials/1.jpg",class: 'img-circle img-responsive', alt: ""
                       .testimonial-author
                         %span.name Jim Walker
                         %p.small CEO of GeneriCorp
@@ -480,7 +482,7 @@
                     %p.quote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?
                     .testimonial-info
                       .testimonial-img
-                        %img.img-circle.img-responsive{alt: "", src: "assets/testimonials/1.jpg"}/
+                        = image_tag "testimonials/1.jpg", class: 'img-circle img-responsive'
                       .testimonial-author
                         %span.name Jim Walker
                         %p.small CEO of GeneriCorp
@@ -490,7 +492,7 @@
                           %i.fa.fa-star
                           %i.fa.fa-star
                           %i.fa.fa-star
-    %section#pricing.pricing{style: "background-image: url('assets/bg-pricing.jpg')"}
+    %section#pricing.pricing{style: "background-image: url('bg-pricing.jpg')"}
       .container.wow.fadeIn
         .row.text-center
           .col-lg-12
@@ -591,7 +593,7 @@
                 .form-group.col-xs-12
                   %button.btn.btn-outline-dark{type: "submit"} Send
     %a.btn.btn-block.btn-full-width{href: "https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3"} Buy Vitality Now!
-    %footer.footer{style: "background-image: url('assets/bg-footer.jpg')"}
+    %footer.footer{style: "background-image: url('bg-footer.jpg')"}
       .container.text-center
         .row
           .col-md-4.contact-details
@@ -630,7 +632,7 @@
             %p.small © 2014 Start Bootstrap Themes
     / Portfolio Modals
     / Example Modal 1
-    #portfolioModal1.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('assets/portfolio/bg-1.jpg')", tabindex: "-1"}
+    #portfolioModal1.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('portfolio/bg-1.jpg')", tabindex: "-1"}
       .modal-content
         .close-modal{"data-dismiss" => "modal"}
           .lr
@@ -639,12 +641,12 @@
           .container
             .row
               .col-lg-8.col-lg-offset-2
-                %img.img-responsive.img-centered{alt: "", src: "assets/client-logos/logo-1.png"}/
+                = image_tag "client-logos/logo-1.png", class: 'img-responsive img-centered'
                 %h2 Project Title
                 %hr.colored/
                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
               .col-lg-12
-                %img.img-responsive.img-centered{alt: "", src: "assets/portfolio/mobile-screens.png"}/
+                = image_tag "portfolio/mobile-screens.png", class: 'img-responsive img-centered'
               .col-lg-8.col-lg-offset-2
                 %ul.list-inline.item-details
                   %li
@@ -663,7 +665,7 @@
                   %i.fa.fa-times
                   Close
     / Example Modal 2
-    #portfolioModal2.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('assets/portfolio/bg-2.jpg')", tabindex: "-1"}
+    #portfolioModal2.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('portfolio/bg-2.jpg')", tabindex: "-1"}
       .modal-content
         .close-modal{"data-dismiss" => "modal"}
           .lr
@@ -672,12 +674,12 @@
           .container
             .row
               .col-lg-8.col-lg-offset-2
-                %img.img-responsive.img-centered{alt: "", src: "assets/client-logos/logo-2.png"}/
+                = image_tag "client-logos/logo-2.png", class: 'img-responsive img-centered'
                 %h2 Project Title
                 %hr.colored/
                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
               .col-lg-12
-                %img.img-responsive.img-centered{alt: "", src: "assets/portfolio/tablet-screens.png"}/
+                = image_tag "portfolio/tablet-screens.png", class: 'img-responsive img-centered'
               .col-lg-8.col-lg-offset-2
                 %ul.list-inline.item-details
                   %li
@@ -696,7 +698,7 @@
                   %i.fa.fa-times
                   Close
     / Example Modal 3
-    #portfolioModal3.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('assets/portfolio/bg-3.jpg')", tabindex: "-1"}
+    #portfolioModal3.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('portfolio/bg-3.jpg')", tabindex: "-1"}
       .modal-content
         .close-modal{"data-dismiss" => "modal"}
           .lr
@@ -705,12 +707,12 @@
           .container
             .row
               .col-lg-8.col-lg-offset-2
-                %img.img-responsive.img-centered{alt: "", src: "assets/client-logos/logo-1.png"}/
+                = image_tag "client-logos/logo-1.png", class: 'img-responsive img-centered'
                 %h2 Project Title
                 %hr.colored/
                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
               .col-lg-12
-                %img.img-responsive.img-centered{alt: "", src: "assets/portfolio/mobile-screens.png"}/
+                = image_tag "portfolio/mobile-screens.png", class: 'img-responsive img-centered'
               .col-lg-8.col-lg-offset-2
                 %ul.list-inline.item-details
                   %li
@@ -729,7 +731,7 @@
                   %i.fa.fa-times
                   Close
     / Example Modal 4
-    #portfolioModal4.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('assets/portfolio/bg-4.jpg')", tabindex: "-1"}
+    #portfolioModal4.portfolio-modal.modal.fade{"aria-hidden" => "true", role: "dialog", style: "background-image: url('portfolio/bg-4.jpg')", tabindex: "-1"}
       .modal-content
         .close-modal{"data-dismiss" => "modal"}
           .lr
@@ -738,12 +740,12 @@
           .container
             .row
               .col-lg-8.col-lg-offset-2
-                %img.img-responsive.img-centered{alt: "", src: "assets/client-logos/logo-2.png"}/
+                = image_tag "client-logos/logo-2.png", class: 'img-responsive img-centered'
                 %h2 Project Title
                 %hr.colored/
                 %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
               .col-lg-12
-                %img.img-responsive.img-centered{alt: "", src: "assets/portfolio/tablet-screens.png"}/
+                = image_tag "portfolio/tablet-screens.png", class: 'img-responsive img-centered'
               .col-lg-8.col-lg-offset-2
                 %ul.list-inline.item-details
                   %li
