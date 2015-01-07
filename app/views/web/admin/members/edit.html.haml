@@ -1,4 +1,9 @@
 = title
 %h1= t('.title')
-= render partial: 'form', locals: { action: :update }
+.row
+  .col-md-10
+    = simple_form_for @member, url: { controller: 'web/admin/members', action: :update }, html: { class: 'form-horizontal' } do |f|
+      = f.input :position, as: :string
+      = f.input :avatar, as: :image_preview, input_html: { preview_version: :medium }
+      = f.button :submit
 = link_to t('helpers.back'), admin_members_path, class: "btn"

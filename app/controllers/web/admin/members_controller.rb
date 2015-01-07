@@ -39,6 +39,6 @@ class Web::Admin::MembersController < Web::Admin::ApplicationController
   private
 
   def member_params
-    params[:user].permit(:id, :name, :email, :password, :city, member_attributes: [ :position, :avatar, :avatar_cache, :user_id ])
+    params.require(:user).permit(:id, :name, :email, :password, :city, member_attributes: [ :position, :avatar, :avatar_cache, :user_id ])
   end
 end

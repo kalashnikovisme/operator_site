@@ -6,16 +6,19 @@
   %thead
     %tr
       %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:avatar)
+      %th= User.human_attribute_name(:name)
       %th= model_class.human_attribute_name(:position)
-      %th= model_class.human_attribute_name(:user_id)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', default: t("helpers.actions")
   %tbody
     - @members.each do |member|
       %tr
         %td= link_to member.id, edit_admin_member_path(member)
-        %td= link_to member.position, edit_admin_member_path(member)
-        %td= member.user_id
+        %td= image_tag member.avatar.small
+        %td= link_to member.user.name, edit_admin_member_path(member)
+        %td= member.position
+        %td= member.created_at
         %td
           = link_to t('.edit', default: t("helpers.links.edit")), edit_admin_member_path(member), class: 'btn btn-warning btn-xs'
           = link_to t('.destroy', default: t("helpers.links.destroy")), admin_member_path(member), method: :delete, data: { confirm: t('.confirm', default: t("helpers.links.confirm", default: 'Are you sure?')) }, class: 'btn btn-xs btn-danger'
