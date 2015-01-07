@@ -4,7 +4,8 @@
     %meta{content: "width=device-width, initial-scale=1.0, user-scalable=no", name: "viewport"}
     %meta{content: "", name: "description"}
     %meta{content: "", name: "author"}
-    %title Vitality
+    %title
+      = t('company.name')
     / Bootstrap Core CSS
     = javascript_include_tag 'application'
     = stylesheet_link_tag :application
@@ -86,7 +87,8 @@
       .overlay
       .intro-content
         = image_tag "profile.png", class: 'img-responsive img-centered', alt: ""
-        .brand-name Vitality
+        .brand-name
+          = t('company.name')
         %hr.colored/
         .brand-name-subtext by Start Bootstrap
       .scroll-down.page-scroll

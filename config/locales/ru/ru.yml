@@ -2,3 +2,5 @@ ru:
   application:
     attributes:
       name: Сайт Александра
+  company:
+    name: SmileFilm
