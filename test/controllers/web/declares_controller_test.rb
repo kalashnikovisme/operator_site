@@ -18,6 +18,6 @@ class Web::DeclaresControllerTest < ActionController::TestCase
     attributes = { user_id: @declare.user_id }
 
     post :create, declare: attributes
-    assert_response :success
+    assert_response :redirect
   end
 end
