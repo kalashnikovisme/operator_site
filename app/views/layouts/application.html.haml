@@ -89,11 +89,6 @@
         = image_tag "profile.png", class: 'img-responsive img-centered', alt: ""
         .brand-name
           = t('company.name')
-        %hr.colored/
-        .brand-name-subtext by Start Bootstrap
-      .scroll-down.page-scroll
-        %a.btn{href: "#about"}
-          %i.fa.fa-angle-down
     %section#about
       .container-fluid
         .row.text-center
@@ -754,7 +749,7 @@
                   %li
                     Client:
                     %strong
-                      %a{href: "http://startbootstrap.com"} Start Bootstrap
+                      %a{href: "http://'company.name'startbootstrap.com"} Start Bootstrap
                   %li
                     Date:
                     %strong
@@ -766,45 +761,6 @@
                 %button.btn.btn-default{"data-dismiss" => "modal", type: "button"}
                   %i.fa.fa-times
                   Close
-    / Style Switcher - FOR DEMO PURPOSES ONLY
-    #style-switcher.close-style-switcher.animated.bounce
-      / Panel Button
-      %a.panel-button
-        %i.fa.fa-gear.fa-spin
-      / Colors
-      .segment
-        %h4 Theme Colors
-        %a.switcher.red-bg{title: "vitality-red"}
-        %a.switcher.orange-bg{title: "vitality-orange"}
-        %a.switcher.yellow-bg{title: "vitality-yellow"}
-        %a.switcher.green-bg{title: "vitality-green"}
-        %a.switcher.turquoise-bg{title: "vitality-turquoise"}
-        %a.switcher.aqua-bg{title: "vitality-aqua"}
-        %a.switcher.blue-bg{title: "vitality-blue"}
-        %a.switcher.purple-bg{title: "vitality-purple"}
-        %a.switcher.pink-bg{title: "vitality-pink"}
-        %a.switcher.tan-bg{title: "vitality-tan"}
-      .segment
-        %h4 Samples
-        %ul.list-unstyled
-          %li
-            %a{href: "agency.html"} Agency
-          %li
-            %a{href: "creative.html"}
-              Creative
-              %strong
-                %small (NEW)
-          %li
-            %a{href: "culinary.html"} Culinary
-          %li
-            %a{href: "fashion.html"} Fashion
-          %li
-            %a{href: "legal.html"} Legal
-          %li
-            %a{href: "video.html"} Video
-      .segment
-        %a{href: "index.html"}
-          %small Back to Preview Page
     / Plugin Scripts
     = javascript_include_tag "js/plugins/jquery.easing.min.js"
     = javascript_include_tag "js/plugins/classie.js"
