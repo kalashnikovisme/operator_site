@@ -1,9 +1,11 @@
-= javascript_include_tag 'web/members'
-
 .row
   .col-md-10
-    = simple_form_for @member, url: { controller: 'web/admin/members', action: action }, html: { class: 'form-horizontal' } do |f|
-      = f.input :position, as: :string
-      = f.association :user
-      = f.input :avatar, as: :image_preview, input_html: { preview_version: :medium }
+    = simple_form_for @user, url: { controller: 'web/admin/members', action: action }, html: { class: 'form-horizontal' } do |f|
+      = f.input :name, as: :string
+      = f.input :email, as: :string
+      = f.input :city, as: :hidden, input_html: { value: 'Ульяновск' }
+      = f.input :password, as: :hidden, input_html: { value: '123456' }
+      = f.simple_fields_for :member, @user.member do |us|
+        = us.input :position, as: :string
+        = us.input :avatar, as: :image_preview, input_html: { preview_version: :medium }
       = f.button :submit

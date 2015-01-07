@@ -4,7 +4,8 @@ class Web::Admin::MembersController < Web::Admin::ApplicationController
   end
 
   def new
-    @member = MemberEditType.new
+    @user = User.new
+    @user.build_member
   end
 
   def edit
@@ -12,8 +13,8 @@ class Web::Admin::MembersController < Web::Admin::ApplicationController
   end
 
   def create
-    @member = MemberEditType.new params[:member]
-    if @member.save
+    @user = User.new member_params
+    if @user.save
       redirect_to admin_members_path
     else
       render action: :new
@@ -33,5 +34,11 @@ class Web::Admin::MembersController < Web::Admin::ApplicationController
     @member = MemberEditType.find params[:id]
     @member.destroy
     redirect_to admin_members_path
+  end
+
+  private
+
+  def member_params
+    params[:user].permit(:id, :name, :email, :password, :city, member_attributes: [ :position, :avatar, :avatar_cache, :user_id ])
   end
 end

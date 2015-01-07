@@ -10,5 +10,6 @@ class User < ActiveRecord::Base
   enumerize :role, in: [ :admin, :user, :declarer ], default: :user
 
   has_many :declares
-  has_many :members
+  has_one :member
+  accepts_nested_attributes_for :member
 end

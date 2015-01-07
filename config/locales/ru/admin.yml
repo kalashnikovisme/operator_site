@@ -36,6 +36,13 @@ ru:
           title: Создать баннер
         edit:
           title: Редактировать баннер
+      members:
+        index:
+          title: Команда
+        new:
+          title: Добавить члена команды
+        edit:
+          title: Редактировать члена команды
   layouts:
     web:
       admin:
@@ -47,3 +54,4 @@ ru:
             blogs: Блоги
             propositions: Акции
             banners: Баннеры
+            members: Команда
