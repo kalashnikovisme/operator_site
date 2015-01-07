@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_secure_password validations: false
-  validates :email, email: true,
+  validates :email, presence: true,
+                    email: true,
                     uniqueness: true
   validates :role, presence: true
   validates :name, presence: true

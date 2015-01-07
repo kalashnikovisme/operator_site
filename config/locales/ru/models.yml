@@ -29,3 +29,8 @@ ru:
       member:
         position: Должность
         avatar: Аватар
+      user:
+        name: Имя
+        email: Email
+        city: Город
+        role: Роль на сайте
