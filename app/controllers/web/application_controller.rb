@@ -1,5 +1,6 @@
 class Web::ApplicationController < ApplicationController
-  before_filter :show_video, :show_proposition
+  #1;2Q
+  #before_filter :show_video, :show_proposition
   include Concerns::AuthManagment
 
   def show_video
