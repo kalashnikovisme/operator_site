@@ -1,15 +1,24 @@
-%header.navbar.navbar-default.navbar-fixed-top
-  .navbar-header
-    %button.navbar-toggle{"type" => "button", "data-toggle" => "collapse", "data-target" => ".navbar-collapse"}
-      %span.icon-bar
-      %span.icon-bar
-      %span.icon-bar
-    %a.navbar-brand{ href: root_path }
-      %span
-        = t('application.attributes.name')
-  .navbar-collapse.collapse
-    %ul.nav.navbar-nav
-    %ul.nav.navbar-nav.pull-right
-      -#= menu_item new_session_path do
-        = t('.sign_in')
-        %span.glyphicon.log_in
+%nav.navbar.navbar-inverse.navbar-fixed-top.navbar-expanded
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href: "#page-top"}
+        = image_tag "logo.png", class: 'img-responsive', alt: ""
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li.hidden
+          %a{href: "#page-top"}
+        %li
+          %a{href: "#about"} About
+        %li
+          %a{href: "#process"} Process
+        %li
+          %a{href: "#work"} Work
+        %li
+          %a{href: "#pricing"} Pricing
+        %li
+          %a{href: "#contact"} Contact
