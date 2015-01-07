@@ -305,7 +305,7 @@ header .scroll-down .btn:hover {
 @media(min-width:768px) {
     header {
         width: 100%;
-        height: 100%;
+        height: 70%;
         padding: 0;
         background-attachment: scroll;
     }
