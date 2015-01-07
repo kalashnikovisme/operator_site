@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       root to: 'welcome#index'
       resources :pages, except: :show
       resources :blogs, except: :show
+      resources :members, except: :show
       resources :users, except: :show
       resources :videos, except: :show
       resources :propositions, except: :show

@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
   enumerize :role, in: [ :admin, :user, :declarer ], default: :user
 
   has_many :declares
+  has_many :members
 end
