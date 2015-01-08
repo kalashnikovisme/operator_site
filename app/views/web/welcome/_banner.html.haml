@@ -3,12 +3,6 @@
     .row
       .col-md-10.col-md-offset-1
         %span.quote
-          Good
-          %span.text-primary design
-          is finding that perfect balance between the way something
-          %span.text-primary looks
-          and how it
-          = succeed "." do
-            %span.text-primary functions
-        %hr.colored/
-        %a.btn.btn-outline-light{href: "#contact"} Let's Find It
+          = @banner.text
+        %hr.colored
+        = link_to @banner.text_on_link, @banner.url, class: 'btn btn-outline-light'

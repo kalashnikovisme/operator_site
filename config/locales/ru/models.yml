@@ -26,6 +26,8 @@ ru:
         url: Ссылка баннера
         state: Статус
         state_event: Статус
+        text: Текст
+        text_on_link: Текст на кнопке
       member:
         position: Должность
         avatar: Аватар

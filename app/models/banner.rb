@@ -3,6 +3,8 @@ class Banner < ActiveRecord::Base
   validates :url, presence: true,
                   url: true
   validates :state, presence: true
+  validates :text, presence: true
+  validates :text_on_link, presence: true
 
   mount_uploader :image, ImageUploader
 
