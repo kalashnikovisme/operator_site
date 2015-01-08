@@ -1,0 +1,31 @@
+%section.bg-gray
+  .container.text-center.wow.fadeIn
+    .row
+      .col-lg-12
+        %h2
+          = t('.our_team')
+        %p
+          = t('.some_about_our_team')
+        %hr.colored
+    .row.content-row
+      .col-lg-12
+        .about-carousel
+          - @members.each do |member|
+            .item
+              = image_tag member.avatar.big, class: 'img-responsive'
+              .caption
+                %h3
+                  = member.user.name
+                %hr.colored
+                %p
+                  = member.position
+                %ul.list-inline.social
+                  %li
+                    %a{href: "#"}
+                      %i.fa.fa-facebook.fa-fw
+                  %li
+                    %a{href: "#"}
+                      %i.fa.fa-twitter.fa-fw
+                  %li
+                    %a{href: "#"}
+                      %i.fa.fa-linkedin.fa-fw

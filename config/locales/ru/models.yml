@@ -5,6 +5,7 @@ ru:
       video: Видео
       blog: Блог
       proposition: Акция
+      member: Член команды
     attributes:
       page:
         title: Название
@@ -25,3 +26,13 @@ ru:
         url: Ссылка баннера
         state: Статус
         state_event: Статус
+        text: Текст
+        text_on_link: Текст на кнопке
+      member:
+        position: Должность
+        avatar: Аватар
+      user:
+        name: Имя
+        email: Email
+        city: Город
+        role: Роль на сайте

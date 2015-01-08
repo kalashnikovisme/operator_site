@@ -1,0 +1,10 @@
+= javascript_include_tag 'web/users'
+
+.row
+  .col-md-10
+    = simple_form_for @user, url: { controller: 'web/admin/users', action: action }, html: { class: 'form-horizontal' } do |f|
+      = f.input :name, as: :string
+      = f.input :city, as: :string
+      = f.input :email, as: :string
+      = f.input :password, as: :string
+      = f.button :submit

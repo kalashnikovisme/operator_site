@@ -3,5 +3,7 @@ FactoryGirl.define do
     email { generate :email }
     password { generate :string }
     role 'admin'
+    name { generate :string }
+    city { generate :string }
   end
 end
