@@ -66,16 +66,6 @@ p.lead {
     font-weight: 900;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-family: title_font;
-    font-weight: 900;
-}
 
 @media(min-width:481px) {
     h1 {
