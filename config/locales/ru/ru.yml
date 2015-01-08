@@ -4,3 +4,8 @@ ru:
       name: Сайт Александра
   company:
     name: SmileFilm
+  web:
+    welcome:
+      team:
+        our_team: Наша команда
+        some_about_our_team: Наша команда самая лучшая команда специалистов на всём белом свете
