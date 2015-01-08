@@ -3,6 +3,8 @@ require 'test_helper'
 class Web::Admin::MembersControllerTest < ActionController::TestCase
   setup do
     @member = create :member
+    @member.user = create :user
+    @member.save
     @admin = create :admin
     sign_in @admin
   end
@@ -18,19 +20,20 @@ class Web::Admin::MembersControllerTest < ActionController::TestCase
   end
 
   test "should create member" do
-    attributes = attributes_for :member
+    attributes = attributes_for :user
+    attributes[:member_attributes] = attributes_for :member
 
-    post :create, member: attributes
+    post :create, user: attributes
     assert_response :redirect
 
     member = Member.last
-    assert_equal attributes[:position], member.position
+    assert_equal attributes[:member_attributes][:position], member.position
   end
 
   test "should not create member" do
     attributes = { position: @member.position }
 
-    post :create, member: attributes
+    post :create, user: attributes
     assert_response :success
   end
 
