@@ -6,6 +6,8 @@ class Banner < ActiveRecord::Base
 
   mount_uploader :image, ImageUploader
 
+  include BannerRepository
+
   state_machine initial: :active do
     state :active
     state :not_active
