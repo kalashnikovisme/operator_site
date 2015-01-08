@@ -73,7 +73,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: title_font;
     font-weight: 900;
 }
 
