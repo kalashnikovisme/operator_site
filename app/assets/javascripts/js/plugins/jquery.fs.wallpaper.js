@@ -26,8 +26,10 @@
 	 * @param onReady [function] <$.noop> "On ready callback"
 	 * @param source [string | object] <null> "Source image (string or object) or video (object) or YouTube (object)"
 	 */
+
+    var autoplay_variable = !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
 	var options = {
-		autoPlay: true,
+		autoPlay: autoplay_variable,
 		embedRatio: 1.777777,
 		hoverPlay: false,
 		loop: true,
