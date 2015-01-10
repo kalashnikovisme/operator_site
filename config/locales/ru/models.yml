@@ -15,7 +15,7 @@ ru:
         title: Название
         description: Описание
         type: Тип
-        link: Ссылка на Youtube
+        link: Ссылка
       blog:
         title: Название
         body: Тело блога

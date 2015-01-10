@@ -8,5 +8,9 @@ ru:
   web:
     welcome:
       team:
-        our_team: Наша команда
-        some_about_our_team: Наша команда самая лучшая команда специалистов на всём белом свете
+        title: Наша команда
+        description: Наша команда самая лучшая команда специалистов на всём белом свете
+      portfolio:
+        all: Все
+        portfolio: Портфолио
+        description: Наши работы
