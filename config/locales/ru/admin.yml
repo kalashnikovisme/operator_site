@@ -50,8 +50,9 @@ ru:
           navbar:
             panel: Админка
             pages: Страницы
-            videos: Видео
+            videos: Портфолио
             blogs: Блоги
             propositions: Акции
             banners: Баннеры
             members: Команда
+            site: Сайт

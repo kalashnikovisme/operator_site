@@ -595,6 +595,7 @@ aside.cta-quote span.quote {
     text-align: center;
     font-size: 30px;
     line-height: 70px;
+    margin-top: 18px;
 }
 
 .services .media .media-body {
@@ -620,13 +621,15 @@ aside.cta-quote span.quote {
     }
 }
 
-.portfolio-carousel {
+.portfolio-carousel,
+.services-carousel {
     padding: 0;
     color: #fff;
     background-color: #222;
 }
 
-.portfolio-carousel .item {
+.portfolio-carousel .item,
+.services-carousel .item {
     padding: 50px 55px;
     text-align: center;
     background: no-repeat center center scroll;
@@ -637,19 +640,23 @@ aside.cta-quote span.quote {
     -o-background-size: cover;
 }
 
-.portfolio-carousel .item .portfolio-image {
+.portfolio-carousel .item .portfolio-image,
+.services-carousel .item .service-image {
     margin-top: 50px;
 }
 
-.portfolio-carousel .item .project-details {
+.portfolio-carousel .item .project-details,
+.services-carousel .item .service-details {
     padding: 0;
 }
 
-.portfolio-carousel .item .project-details img.client-logo {
+.portfolio-carousel .item .project-details img.client-logo,
+.services-carousel .item .service-details img.client-logo {
     margin: 0 auto 25px;
 }
 
-.portfolio-carousel .item .project-details .project-name {
+.portfolio-carousel .item .project-details .project-name,
+.service-carousel .item .service-details .service-name {
     display: block;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -659,18 +666,22 @@ aside.cta-quote span.quote {
     line-height: 40px;
 }
 
-.portfolio-carousel .item .project-details .project-description {
+.portfolio-carousel .item .project-details .project-description,
+.services-carousel .item .service-details .service-description {
     display: block;
     font-size: 18px;
     line-height: 18px;
 }
 
-.portfolio-carousel .owl-controls {
+.portfolio-carousel .owl-controls,
+.services-carousel .owl-controls {
     margin-top: 0;
 }
 
 .portfolio-carousel .owl-controls .owl-prev,
-.portfolio-carousel .owl-controls .owl-next {
+.portfolio-carousel .owl-controls .owl-next,
+.services-carousel .owl-controls .owl-prev,
+.services-carousel .owl-controls .owl-next {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -689,51 +700,74 @@ aside.cta-quote span.quote {
 }
 
 .portfolio-carousel .owl-controls .owl-prev:hover,
-.portfolio-carousel .owl-controls .owl-next:hover {
+.portfolio-carousel .owl-controls .owl-next:hover,
+.services-carousel .owl-controls .owl-prev:hover,
+.services-carousel .owl-controls .owl-next:hover {
     opacity: 1;
 }
 
-.portfolio-carousel .owl-controls .owl-prev {
+.portfolio-carousel .owl-controls .owl-prev,
+.services-carousel .owl-controls .owl-prev {
     left: 0;
 }
 
-.portfolio-carousel .owl-controls .owl-next {
+.portfolio-carousel .owl-controls .owl-next,
+.services-carousel .owl-controls .owl-next {
     right: 0;
 }
 
+.services-carousel .item a.btn-outline-light {
+  margin-top: 20px;
+}
+
 @media(min-width:992px) {
-    .portfolio-carousel .item {
+    .portfolio-carousel .item,
+    .services-carousel .item {
         padding: 155px 55px;
         min-height: 100%;
         text-align: left;
     }
 
-    .portfolio-carousel .item .portfolio-image {
+    .portfolio-carousel .item .portfolio-image,
+    .services-carousel .item .services-image {
         margin-top: 0;
     }
 
     .portfolio-carousel .item .project-details {
-        padding: 15% 0 0;
+      padding: 15% 0 0;
+
+    }
+    .services-carousel .item .service-details {
+        padding: 0;
     }
 
-    .portfolio-carousel .item .project-details img.client-logo {
+    .portfolio-carousel .item .project-details img.client-logo,
+    .services-carousel .item .service-details img.client-logo {
         margin: 0 auto 25px 0;
     }
 
-    .portfolio-carousel .item .project-details .project-name {
+    .portfolio-carousel .item .project-details .project-name,
+    .services-carousel .item .service-details .service-name {
         display: block;
         font-size: 50px;
         line-height: 50px;
     }
 
-    .portfolio-carousel .item .project-details .project-description {
+    .portfolio-carousel .item .project-details .project-description,
+    .services-carousel .item .service-details .service-description {
         font-size: 20px;
         line-height: 20px;
     }
 
-    .portfolio-carousel .item hr.colored {
+    .portfolio-carousel .item hr.colored,
+    .services-carousel .item hr.colored {
         margin: 20px auto 20px 0;
     }
+}
+
+.services-carousel .fa.fa-angle-right,
+.services-carousel .fa.fa-angle-left {
+  margin-top: 18px;
 }
 
 .portfolio-gallery .item {

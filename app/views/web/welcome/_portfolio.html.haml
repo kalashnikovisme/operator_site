@@ -1,0 +1,32 @@
+%section
+  .container.text-center.wow.fadeIn
+    %h2
+      = t('.portfolio')
+    %hr.colored
+    %p
+      = t('.description')
+    .row.content-row
+      .col-lg-12
+        .portfolio-filter
+          %ul#filters.clearfix
+            %li
+              %span.filter.active{ data: { filter: all_project_types_in_filter(@project_types) } }
+                = t('.all')
+            - @project_types.each do |project_type|
+              %li
+                %span.filter{"data-filter" => project_type }
+                  = localize_enum project_type, :project_type, :video
+    .row
+      .col-lg-12
+        #portfoliolist
+          - @videos.each_with_index do |video, i|
+            .portfolio{ class: video.project_type, data: { cat: video.project_type, toggle: :modal, href: "#portfolioModal#{i + 1}" } }
+              .portfolio-wrapper
+                = video.from_vimeo
+                .caption
+                  .caption-text
+                    %a.text-title
+                      = video.title
+                    %span.text-category
+                      = video.description
+                  .caption-bg

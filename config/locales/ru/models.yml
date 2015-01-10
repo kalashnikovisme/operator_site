@@ -12,7 +12,10 @@ ru:
         body: Тело страницы
         slug: Адрес страницы
       video:
-        link: Ссылка на Youtube
+        title: Название
+        description: Описание
+        type: Тип
+        link: Ссылка
       blog:
         title: Название
         body: Тело блога
