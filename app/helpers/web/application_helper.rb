@@ -17,4 +17,8 @@ module Web::ApplicationHelper
   def select_options_for_model_state(model)
     model_states(model).map { |x| [x.human_name, x.name] }
   end
+
+  def localize_enum(value, attr_name, model_name)
+    I18n.t("enumerize.#{model_name}.#{attr_name}.#{value}")
+  end
 end

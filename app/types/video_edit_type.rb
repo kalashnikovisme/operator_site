@@ -1,5 +1,5 @@
 class VideoEditType < Video
   include ApplicationType
 
-  permit :link
+  permit :title, :description, :link, :type
 end
