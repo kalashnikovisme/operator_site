@@ -12,5 +12,14 @@ ru:
         description: Наша команда самая лучшая команда специалистов на всём белом свете
       portfolio:
         all: Все
-        portfolio: Портфолио
+        title: Портфолио
         description: Наши работы
+      getting_email:
+        title: Рассылка
+        description: 'Чтобы получать бесплатную рассылку, просто заполните форму'
+        enter_the_name: Введите имя
+        enter_the_email: Введите Email
+        enter_the_city: Введите город
+        subscribe_to_newsletter: Подписаться на рассылку
+        subscribe_completed: Подписка оформлена
+        subscribe_not_completed: "Подписка не удалась. Возможно, вы уже подписаны на нашу рассылку."
