@@ -1,9 +1,10 @@
 ru:
   application:
     attributes:
-      name: Сайт SmileFilm
+      name: Сайт SmileFilm Studio
   company:
-    name: SmileFilm
+    name: SmileFilm Studio
+    short_name: SmileFilm
   web:
     welcome:
       team:
