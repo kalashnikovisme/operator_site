@@ -23,3 +23,7 @@ ru:
         subscribe_to_newsletter: Подписаться на рассылку
         subscribe_completed: Подписка оформлена
         subscribe_not_completed: "Подписка не удалась. Возможно, вы уже подписаны на нашу рассылку."
+      services:
+        i_need_corporative_video: Мне нужен корпоративный ролик
+        i_need_wedding_video: Мне нужен видеооператор на свадьбу
+        all_services: Все услуги
