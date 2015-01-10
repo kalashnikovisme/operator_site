@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     end
     resource :session, only: [:new, :create, :destroy]
     resources :declares, only: [ :create ]
+    resources :users, only: [ :create ]
     namespace :admin do
       root to: 'welcome#index'
       resources :pages, except: :show
