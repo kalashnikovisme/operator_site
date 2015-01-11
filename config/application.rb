@@ -1,7 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-load "lib/configus.rb"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -32,6 +31,9 @@ module OperatorSite
       g.javascripts false
       g.helper false
       g.decorator false
+    end
+    ActionDispatch::Reloader.to_prepare do
+      load Rails.root.join('lib/configus.rb')
     end
   end
 end
