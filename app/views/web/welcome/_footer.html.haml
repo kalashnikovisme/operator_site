@@ -21,11 +21,10 @@
         %p
           %a{ href: "mailto:mail@example.com" } mail@example.com
     .row.social
-      .col-lg-12
-        %ul.list-inline
-          %li
-            %a{ href: configus.social_links.facebook }
-              %i.fa.fa-facebook.fa-fw.fa-2x
+      .col-md-4
+      .col-md-1
+        %a.facebook{ href: configus.social_links.facebook }
+          = image_tag 'social_networks/gray/facebook.png'
     .row.copyright
       .col-lg-12
         %p.small
