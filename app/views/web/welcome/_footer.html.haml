@@ -23,13 +23,17 @@
     .row.social
       .col-md-4
       .col-md-1
+        %a.instagram{ href: configus.social_links.instagram }
+          = image_tag 'social_networks/gray/instagram.png'
+      .col-md-1
         %a.vimeo{ href: configus.social_links.vimeo }
           = image_tag 'social_networks/gray/vimeo.png'
       .col-md-1
         %a.facebook{ href: configus.social_links.facebook }
           = image_tag 'social_networks/gray/facebook.png'
       .col-md-1
-      .col-md-1
+        %a.vk{ href: configus.social_links.vk.all }
+          = image_tag 'social_networks/gray/vk.png'
     .row.copyright
       .col-lg-12
         %p.small
