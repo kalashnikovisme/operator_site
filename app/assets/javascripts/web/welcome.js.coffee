@@ -12,4 +12,10 @@ $(document).ready ->
   ).on "ajax:error", (e, xhr, status, error) ->
     $('#subscribe_not_completed').fadeIn(500)
     return
+  $('.social a').hover ->
+    $(this).children('img').prop('src', "assets/social_networks/gray/#{$(this).attr('class')}.png")
+    return
+  $('.social a').mouseover ->
+    $(this).children('img').prop('src', "assets/social_networks/white/#{$(this).attr('class')}.png")
+    return
   return
