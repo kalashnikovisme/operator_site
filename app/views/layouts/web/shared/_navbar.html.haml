@@ -12,13 +12,25 @@
       %ul.nav.navbar-nav.navbar-right
         %li.hidden
           %a{href: "#page-top"}
+        %li.dropdown
+          %a.dropdown-toggle{ data: { hover: :dropdown, toggle: :dropdown }, href: "#" }
+            Кнопка 1
+          %ul.dropdown-menu{ role: :menu }
+            %li
+              %a{ href: "#" }
+                Первая позиция меню
+            %li
+              %a{ href: "#" }
+                Вторая позиция меню
         %li
-          %a{href: "#about"} About
+          %a{href: "#"}
+            Кнопка 2
         %li
-          %a{href: "#process"} Process
+          %a{href: "#"}
+            Кнопка 3
         %li
-          %a{href: "#work"} Work
+          %a{href: "#"}
+            Кнопка 4
         %li
-          %a{href: "#pricing"} Pricing
-        %li
-          %a{href: "#contact"} Contact
+          %a{href: "#"}
+            Кнопка 5

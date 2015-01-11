@@ -2,5 +2,11 @@ ru:
   enumerize:
     video:
       project_type:
-        good: Хорошие
-        very_good: Очень хорошие
+        weddings: Свадьбы
+        lovestory: LoveStory
+        glans: Венчание
+        extract: Выписка
+        family: Семейные
+        corporation: Корпоративные
+        portrait: "Видео-портрет"
+        movie: Кино

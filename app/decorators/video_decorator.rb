@@ -3,7 +3,7 @@ class VideoDecorator < Draper::Decorator
 
   include AutoHtml
 
-  def from_youtube(width = 800, height = 455, autoplay = false)
+  def from_youtube(width = 547, height = 265, autoplay = false)
     if model.link
       auto_html model.link do
         youtube width: width, height: height, autoplay: autoplay
@@ -11,7 +11,7 @@ class VideoDecorator < Draper::Decorator
     end
   end
 
-  def from_vimeo(width = 353, height = 265, autoplay = false)
+  def from_vimeo(width = 547, height = 265, autoplay = false)
     if model.link
       auto_html model.link do
         vimeo width: width, height: height, autoplay: autoplay

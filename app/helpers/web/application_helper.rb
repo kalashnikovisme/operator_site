@@ -33,4 +33,12 @@ module Web::ApplicationHelper
       "#{current_year}"
     end
   end
+
+  def video_embed(video)
+    if video.link.include? 'youtu'
+      video.from_youtube
+    elsif video.link.include? 'vimeo'
+      video.from_vimeo
+    end
+  end
 end

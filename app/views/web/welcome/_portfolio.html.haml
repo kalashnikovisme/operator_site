@@ -22,7 +22,7 @@
           - @videos.each_with_index do |video, i|
             .portfolio{ class: video.project_type, data: { cat: video.project_type, toggle: :modal, href: "#portfolioModal#{i + 1}" } }
               .portfolio-wrapper
-                = video.from_vimeo
+                = video_embed(video)
                 .caption
                   .caption-text
                     %a.text-title
