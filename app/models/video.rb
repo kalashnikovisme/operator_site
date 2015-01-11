@@ -6,5 +6,5 @@ class Video < ActiveRecord::Base
   validates :project_type, presence: true
 
   extend Enumerize
-  enumerize :project_type, in: [ :good, :very_good ], default: :good
+  enumerize :project_type, in: [ :weddings, :lovestory, :glans, :extract, :family, :corporation, :portrait, :movie ], default: :weddings
 end
