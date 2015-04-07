@@ -23,3 +23,5 @@ config/initializers/secret_token.rb
 !public/camera.mp4
 !public/bg-mobile-fallback.jpg
 !public/fontawesome-webfont.svg
+config/secrets.yml
+config/database.yml
