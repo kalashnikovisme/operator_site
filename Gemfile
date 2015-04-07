@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-
 gem 'rails', '4.2'
 gem 'responders', '~> 2.0'
 gem 'pg'
@@ -43,7 +41,6 @@ gem 'kaminari'
 gem 'virtus'
 gem "mini_magick"
 gem 'rails-observers'
-gem 'active_form', github: 'rails/activeform'
 gem 'rest_in_place'
 gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master', submodules: true
 gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
@@ -66,6 +63,8 @@ group :development do
   gem 'capistrano3-unicorn'
   gem 'capistrano-sidekiq'
   gem 'capistrano-rvm'
+  gem 'rvm-capistrano'
+  gem 'capistrano-ssh-doctor', '~> 1.0'
   gem 'quiet_assets'
 end
 
