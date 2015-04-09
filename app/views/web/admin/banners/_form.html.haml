@@ -9,3 +9,4 @@
       = f.input :state_event, as: :state_event
       = f.input :image, as: :image_preview, input_html: { preview_version: :medium }
       = f.button :submit
+      = link_to t('helpers.back'), admin_banners_path, class: "btn"

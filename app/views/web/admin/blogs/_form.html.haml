@@ -7,3 +7,4 @@
       = f.input :body
       = f.input :photo, as: :image_preview, input_html: { preview_version: :medium }
       = f.button :submit
+      = link_to t('helpers.back'), admin_blogs_path, class: "btn"
