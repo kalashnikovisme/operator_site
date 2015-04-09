@@ -14,6 +14,8 @@ Configus.build Rails.env do
       vimeo 'http://vimeo.com/smilefilm'
     end
     email 'smile@smilefilm.ru'
+    adress 'адрес компании'
+    phone 'телефон компании'
   end
 
   env :staging, parent: :production do
