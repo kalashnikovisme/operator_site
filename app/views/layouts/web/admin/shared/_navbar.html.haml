@@ -10,27 +10,28 @@
       |
       %span
         = t('.panel')
-  .navbar-collapse.collapse
-    %ul.nav.navbar-nav
-      %li
-        = link_to admin_pages_path do
-          = t('.pages')
-      %li
-        = link_to admin_videos_path do
-          = t('.videos')
-      %li
-        = link_to admin_blogs_path do
-          = t('.blogs')
-      %li
-        = link_to admin_propositions_path do
-          = t('.propositions')
-      %li
-        = link_to admin_banners_path do
-          = t('.banners')
-      %li
-        = link_to admin_members_path do
-          = t('.members')
-    %ul.nav.navbar-nav.pull-right
-      %li
-        = link_to root_path do
-          = t('.site')
+  - if signed_in?
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav
+        %li
+          = link_to admin_pages_path do
+            = t('.pages')
+        %li
+          = link_to admin_videos_path do
+            = t('.videos')
+        %li
+          = link_to admin_blogs_path do
+            = t('.blogs')
+        %li
+          = link_to admin_propositions_path do
+            = t('.propositions')
+        %li
+          = link_to admin_banners_path do
+            = t('.banners')
+        %li
+          = link_to admin_members_path do
+            = t('.members')
+      %ul.nav.navbar-nav.pull-right
+        %li
+          = link_to root_path do
+            = t('.site')
