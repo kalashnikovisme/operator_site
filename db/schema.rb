@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150110022840) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "banners", force: true do |t|
+  create_table "banners", force: :cascade do |t|
     t.text     "image"
     t.text     "url"
     t.text     "state"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20150110022840) do
     t.text     "text_on_link"
   end
 
-  create_table "blogs", force: true do |t|
+  create_table "blogs", force: :cascade do |t|
     t.text     "title"
     t.text     "body"
     t.text     "photo"
@@ -34,14 +34,14 @@ ActiveRecord::Schema.define(version: 20150110022840) do
     t.datetime "updated_at"
   end
 
-  create_table "declares", force: true do |t|
+  create_table "declares", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "proposition_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "members", force: true do |t|
+  create_table "members", force: :cascade do |t|
     t.integer  "user_id"
     t.text     "avatar"
     t.text     "position"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20150110022840) do
     t.datetime "updated_at"
   end
 
-  create_table "pages", force: true do |t|
+  create_table "pages", force: :cascade do |t|
     t.text     "title"
     t.text     "body"
     t.text     "slug"
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 20150110022840) do
     t.datetime "updated_at"
   end
 
-  create_table "propositions", force: true do |t|
+  create_table "propositions", force: :cascade do |t|
     t.text     "text"
     t.datetime "begin_date"
     t.datetime "end_date"
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 20150110022840) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.text     "email"
     t.text     "password_digest"
     t.datetime "created_at"
@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 20150110022840) do
     t.text     "name"
   end
 
-  create_table "videos", force: true do |t|
+  create_table "videos", force: :cascade do |t|
     t.text     "link"
     t.datetime "created_at"
     t.datetime "updated_at"
