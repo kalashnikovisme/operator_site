@@ -43,6 +43,13 @@ ru:
           title: Добавить члена команды
         edit:
           title: Редактировать члена команды
+      users:
+        index:
+          title: Список рассылки
+        new:
+          title: Добавить пункт в список
+        edit:
+          title: Редактировать пункт списка
   layouts:
     web:
       admin:
@@ -55,4 +62,5 @@ ru:
             propositions: Акции
             banners: Баннеры
             members: Команда
+            users: Список рассылки
             site: Сайт
