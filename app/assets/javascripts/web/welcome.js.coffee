@@ -12,10 +12,13 @@ $(document).ready ->
   ).on "ajax:error", (e, xhr, status, error) ->
     $('#subscribe_not_completed').fadeIn(500)
     return
+  $('img.white').hide()
   $('.social a').hover ->
-    $(this).children('img').prop('src', "/assets/social_networks/gray/#{$(this).attr('class')}.png")
+    $(this).children('img.white').hide()
+    $(this).children('img.gray').show()
     return
   $('.social a').mouseover ->
-    $(this).children('img').prop('src', "/assets/social_networks/white/#{$(this).attr('class')}.png")
+    $(this).children('img.white').show()
+    $(this).children('img.gray').hide()
     return
   return
