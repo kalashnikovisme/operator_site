@@ -23,10 +23,3 @@
             .portfolio{ class: video.project_type, data: { cat: video.project_type, toggle: :modal, href: "#portfolioModal#{i + 1}" } }
               .portfolio-wrapper
                 = video_embed(video)
-                .caption
-                  .caption-text
-                    %a.text-title
-                      = video.title
-                    %span.text-category
-                      = video.description
-                  .caption-bg
