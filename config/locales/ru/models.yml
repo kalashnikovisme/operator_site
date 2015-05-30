@@ -16,6 +16,8 @@ ru:
         description: Описание
         type: Тип
         link: Ссылка
+        project_type: Тип проекта
+        order_number: Порядок
       blog:
         title: Название
         body: Тело блога

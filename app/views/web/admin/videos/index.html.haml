@@ -11,6 +11,7 @@
       %th= model_class.human_attribute_name(:description)
       %th= model_class.human_attribute_name(:link)
       %th= model_class.human_attribute_name(:type)
+      %th= model_class.human_attribute_name(:order_number)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', default: t("helpers.actions")
   %tbody
@@ -21,6 +22,7 @@
         %td= video.description
         %td= link_to video.link, video.link
         %td= localize_enum video.project_type, :project_type, :video
+        %td= video.order_number
         %td=l video.created_at
         %td
           = link_to t('.edit', default: t("helpers.links.edit")), edit_admin_video_path(video), class: 'btn btn-warning btn-xs'
