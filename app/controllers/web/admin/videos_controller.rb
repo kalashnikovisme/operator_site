@@ -1,6 +1,6 @@
 class Web::Admin::VideosController < Web::Admin::ApplicationController
   def index
-    @videos = Video.all
+    @videos = Video.order('id DESC')
   end
 
   def new
