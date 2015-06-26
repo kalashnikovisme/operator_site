@@ -5,14 +5,9 @@
         %h4
           %i.fa.fa-phone
           = t('.phone')
-        %p
-          = configus.phone
-      .col-md-4.contact-details
-        %h4
-          %i.fa.fa-map-marker
-          = t('.office')
-        %p
-          = configus.adress
+        - configus.phones.each do |phone|
+          %p
+            = phone
       .col-md-4.contact-details
         %h4
           %i.fa.fa-envelope

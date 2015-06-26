@@ -43,6 +43,7 @@ ru:
           title: Добавить члена команды
         edit:
           title: Редактировать члена команды
+          edit_user_attributes: Изменить данные пользователя
       users:
         index:
           title: Список рассылки
@@ -64,3 +65,5 @@ ru:
             members: Команда
             users: Список рассылки
             site: Сайт
+          errors:
+            some_errors_was_found: Найдено несколько ошибок

@@ -8,5 +8,12 @@ ru:
         extract: Выписка
         family: Семейные
         corporation: Корпоративные
-        portrait: "Видео-портрет"
+        portrait: Портрет личности
         movie: Кино
+        nikah: Никах
+        schools: Школы
+        showed_with_all: Все
+        sde: SDE
+      show_with_all:
+        hide: Скрывать
+        show: Показывать

@@ -54,21 +54,28 @@ gem 'wysiwyg-rails'
 gem 'font-awesome-rails'
 gem 'auto_html'
 
-group :development do
+group :development, :test do
+  gem 'byebug'
+  gem 'guard-livereload', '~> 2.4', require: false
+  gem "rack-livereload"
   gem 'web-console', '2.0.0.beta2'
-  gem 'spring'
+  gem 'spring', '1.3.4'
   gem 'capistrano'
   gem 'capistrano-bundler'
-  gem 'capistrano-rails'
+  gem 'capistrano-rails', '1.1.3'
   gem 'capistrano3-unicorn'
   gem 'capistrano-sidekiq'
   gem 'capistrano-rvm'
   gem 'rvm-capistrano'
   gem 'capistrano-ssh-doctor', '~> 1.0'
+  gem 'capistrano-rails-console'
+  gem 'capistrano-rails-tail-log'
+  gem 'capistrano-faster-assets', '~> 1.0'
+  gem 'capistrano-rails-collection'
   gem 'quiet_assets'
-end
-
-group :development, :test do
+  gem 'colorize', '0.6.0'
+  gem 'better_errors'
+  gem 'railroady'
   gem 'faker'
   gem 'factory_girl_rails'
   gem 'pry-rails'

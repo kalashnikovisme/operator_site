@@ -1,5 +1,7 @@
 = title
-%h1= t('.title')
+%h1
+  = t('.title')
+  = link_to t('.edit_user_attributes'), edit_admin_user_path(@member.user_id), class: 'btn btn-warning'
 .row
   .col-md-10
     = simple_form_for @member, url: { controller: 'web/admin/members', action: :update }, html: { class: 'form-horizontal' } do |f|

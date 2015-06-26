@@ -21,4 +21,7 @@ $(document).ready ->
     $(this).children('img.white').show()
     $(this).children('img.gray').hide()
     return
+  setTimeout (->
+    $('.portfolio').not('.showed_with_all').hide()
+  ), 1000
   return
