@@ -5,8 +5,11 @@ class Video < ActiveRecord::Base
   validates :description, presence: true
   validates :project_type, presence: true
   validates :order_number, presence: true,
-                           numericality: { greater_than: 0 }
+                           numericality: { greater_than: 0 },
+                           uniqueness: { scope: :project_type }
 
+  include VideoRepository
   extend Enumerize
-  enumerize :project_type, in: [ :weddings, :lovestory, :glans, :extract, :family, :corporation, :portrait, :movie ], default: :weddings
+  enumerize :project_type, in: [ :weddings, :lovestory, :glans, :nikah, :extract, :family, :corporation, :portrait, :schools, :movie, :sde ], default: :weddings
+  enumerize :show_with_all, in: [ :show, :hide ], default: :hide
 end

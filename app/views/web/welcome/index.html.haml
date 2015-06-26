@@ -1,34 +1,6 @@
 = javascript_include_tag 'web/welcome'
 = stylesheet_link_tag 'web/welcome'
 = render 'video_header'
-%section#about
-  .container-fluid
-    .row.text-center
-      .col-lg-12.wow.fadeIn
-        %h1 Здесь должен быть текст
-        %p Здесь должен быть подтекст
-        %hr.colored/
-    .row.text-center.content-row
-      .col-md-3.col-sm-6.wow.fadeIn{"data-wow-delay" => ".2s"}
-        .about-content
-          %i.fa.fa-eye.fa-4x
-          %h3 Преимущество 1
-          %p Описание преимущества. Иконку можно выбрать любую.
-      .col-md-3.col-sm-6.wow.fadeIn{"data-wow-delay" => ".4s"}
-        .about-content
-          %i.fa.fa-edit.fa-4x
-          %h3 Преимущество 2
-          %p Описание преимущества. Иконку можно выбрать любую.
-      .col-md-3.col-sm-6.wow.fadeIn{"data-wow-delay" => ".6s"}
-        .about-content
-          %i.fa.fa-tablet.fa-4x
-          %h3 Преимущество 3
-          %p Описание преимущества. Иконку можно выбрать любую.
-      .col-md-3.col-sm-6.wow.fadeIn{"data-wow-delay" => ".8s"}
-        .about-content
-          %i.fa.fa-heart.fa-4x
-          %h3 Преимущество 4
-          %p Описание преимущества. Иконку можно выбрать любую.
 = render 'banner'
 = render 'portfolio'
 = render 'team'

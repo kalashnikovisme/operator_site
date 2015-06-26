@@ -17,7 +17,8 @@ ru:
         type: Тип
         link: Ссылка
         project_type: Тип проекта
-        order_number: Порядок
+        order_number: Порядковый номер
+        show_with_all: Показывать во вкладке ВСЕ
       blog:
         title: Название
         body: Тело блога
@@ -41,3 +42,9 @@ ru:
         email: Email
         city: Город
         role: Роль на сайте
+    errors:
+      models:
+        video:
+          attributes:
+            order_number:
+              taken: уже занят в этой категории

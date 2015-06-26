@@ -10,6 +10,7 @@ class Web::Admin::MembersController < Web::Admin::ApplicationController
 
   def edit
     @member = MemberEditType.find params[:id]
+    @user = UserEditType.find @member.user_id
   end
 
   def create
