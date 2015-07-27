@@ -1,9 +1,9 @@
 = javascript_include_tag 'web/welcome'
 = stylesheet_link_tag 'web/welcome'
 = render 'video_header'
-= render 'banner'
-= render 'portfolio'
-= render 'team'
+- @blocks.each do |block|
+  = render block.view_name
+-#= render 'banner'
 -#%section.testimonials.bg-gray
   .container.wow.fadeIn
     .row
@@ -110,5 +110,4 @@
             %li.list-group-item 200 MB Storage
             %li.list-group-item Unlimited Support
           %a.btn.btn-outline-dark{href: "#"} Sign Up
-= render 'getting_email'
 = render 'footer'

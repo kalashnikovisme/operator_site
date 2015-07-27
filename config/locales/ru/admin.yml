@@ -51,6 +51,20 @@ ru:
           title: Добавить пункт в список
         edit:
           title: Редактировать пункт списка
+      advantages:
+        index:
+          title: Преимущества
+        new:
+          title: Добавить преимущество
+        edit:
+          title: Редактировать преимущество
+      blocks:
+        index:
+          title: Блоки
+          hide: Скрыть
+          show: Показать
+        edit:
+          title: Редактировать блок
   layouts:
     web:
       admin:
@@ -64,6 +78,8 @@ ru:
             banners: Баннеры
             members: Команда
             users: Список рассылки
+            advantages: Преимущества
             site: Сайт
+            blocks: Блоки
           errors:
             some_errors_was_found: Найдено несколько ошибок
