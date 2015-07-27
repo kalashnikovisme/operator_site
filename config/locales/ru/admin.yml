@@ -58,6 +58,13 @@ ru:
           title: Добавить преимущество
         edit:
           title: Редактировать преимущество
+      blocks:
+        index:
+          title: Блоки
+          hide: Скрыть
+          show: Показать
+        edit:
+          title: Редактировать блок
   layouts:
     web:
       admin:
@@ -73,5 +80,6 @@ ru:
             users: Список рассылки
             advantages: Преимущества
             site: Сайт
+            blocks: Блоки
           errors:
             some_errors_was_found: Найдено несколько ошибок

@@ -48,6 +48,12 @@ ru:
         text: Описание
         icon: Картинка
         created_at: Дата создания
+      block:
+        title: Название
+        text: Описание
+        state: Статус
+        state_event: Статус
+        order_number: Порядок
     errors:
       models:
         video:

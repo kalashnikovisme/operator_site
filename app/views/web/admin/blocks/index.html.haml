@@ -15,11 +15,15 @@
     - @blocks.each do |block|
       %tr
         %td= link_to block.id, edit_admin_block_path(block)
-        %td= block.title
+        %td= link_to block.title, edit_admin_block_path(block)
         %td= block.order_number
         %td= block.state
         %td= block.created_at
         %td
+          - if block.visible?
+            = link_to t('.hide'), admin_block_path(block, block: { state: :hidden }), method: :patch, class: 'btn btn-warning btn-xs'
+          - else
+            = link_to t('.show'), admin_block_path(block, block: { state: :visible }), method: :patch, class: 'btn btn-success btn-xs'
           = link_to t('.edit', default: t("helpers.links.edit")), edit_admin_block_path(block), class: 'btn btn-warning btn-xs'
           = link_to t('.destroy', default: t("helpers.links.destroy")), admin_block_path(block), method: :delete, data: { confirm: t('.confirm', default: t("helpers.links.confirm", default: 'Are you sure?')) }, class: 'btn btn-xs btn-danger'
 

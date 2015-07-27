@@ -5,6 +5,7 @@ class CreateBlocks < ActiveRecord::Migration
       t.text :text
       t.text :state
       t.integer :order_number
+      t.text :view_name
 
       t.timestamps null: false
     end

@@ -8,5 +8,6 @@ class Web::WelcomeController < Web::ApplicationController
     @project_types = [:showed_with_all] + Video.project_type.values
     @user = UserEditType.new
     @advantages = Advantage.all
+    @blocks = Block.where(state: :visible).order('order_number ASC')
   end
 end

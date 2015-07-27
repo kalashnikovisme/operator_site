@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20150727142908) do
     t.text     "text"
     t.text     "state"
     t.integer  "order_number"
+    t.text     "view_name"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
