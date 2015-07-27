@@ -7,5 +7,6 @@ class Web::WelcomeController < Web::ApplicationController
     @showed_with_all_video = VideoDecorator.decorate_collection Video.showed_with_all
     @project_types = [:showed_with_all] + Video.project_type.values
     @user = UserEditType.new
+    @advantages = Advantage.all
   end
 end
