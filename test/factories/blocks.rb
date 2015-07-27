@@ -1,7 +1,7 @@
 FactoryGirl.define do
-  factory :advantage do
+  factory :block do
     title { generate :string }
-    icon { generate :file }
     text { generate :string }
+    order_number { generate :integer }
   end
 end

@@ -20,6 +20,7 @@ Rails.application.routes.draw do
       resources :propositions, except: :show
       resources :banners, except: :show
       resources :advantages, except: :show
+      resources :blocks, except: :show
     end
   end
 end
