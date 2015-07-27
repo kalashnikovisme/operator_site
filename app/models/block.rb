@@ -1,6 +1,5 @@
 class Block < ActiveRecord::Base
   validates :title, presence: true
-  validates :text, presence: true
   validates :state, presence: true
   validates :order_number, presence: true,
                            numericality: { greater_than: 0 },
