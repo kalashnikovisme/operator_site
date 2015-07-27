@@ -2,8 +2,10 @@
   .container-fluid
     .row.text-center
       .col-lg-12.wow.fadeIn
-        %h1 Здесь должен быть текст
-        %p Здесь должен быть подтекст
+        %h1
+          = block.title
+        %p
+          = block.text
         %hr.colored/
     .row.text-center.content-row
       - @advantages.each_with_index do |advantage, index|

@@ -3,10 +3,10 @@
     .row
       .col-lg-12.text-center
         %h2
-          = t('.title')
+          = block.title
         %hr.colored
         %p
-          = t('.description')
+          = block.text
     .row.content-row
       .col-lg-8.col-lg-offset-2
         = simple_form_for @user, url: { controller: 'web/users', action: :create }, input_html: { name: 'sentMessage', novalidate: '' }, remote: true do |f|

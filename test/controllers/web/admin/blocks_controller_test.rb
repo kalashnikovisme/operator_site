@@ -25,11 +25,11 @@ class Web::Admin::BlocksControllerTest < ActionController::TestCase
     assert_response :redirect
 
     block = Block.last
-    assert_equal attributes[:text], block.text
+    assert_equal attributes[:title], block.title
   end
 
   test 'should not create block' do
-    attributes = { text: @block.text }
+    attributes = { title: @block.title }
 
     post :create, block: attributes
     assert_response :success
@@ -46,12 +46,12 @@ class Web::Admin::BlocksControllerTest < ActionController::TestCase
     assert_response :redirect
 
     @block.reload
-    assert_equal attributes[:text], @block.text
+    assert_equal attributes[:title], @block.title
   end
 
   test 'should not update block with render edit' do
     attributes = attributes_for :block
-    attributes[:text] = nil
+    attributes[:title] = nil
     put :update, id: @block, block: attributes
 
     assert_response :success
