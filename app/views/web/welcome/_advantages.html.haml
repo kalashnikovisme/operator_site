@@ -6,23 +6,11 @@
         %p Здесь должен быть подтекст
         %hr.colored/
     .row.text-center.content-row
-      .col-md-3.col-sm-6.wow.fadeIn{"data-wow-delay" => ".2s"}
-        .about-content
-          %i.fa.fa-eye.fa-4x
-          %h3 Преимущество 1
-          %p Описание преимущества. Иконку можно выбрать любую.
-      .col-md-3.col-sm-6.wow.fadeIn{"data-wow-delay" => ".4s"}
-        .about-content
-          %i.fa.fa-edit.fa-4x
-          %h3 Преимущество 2
-          %p Описание преимущества. Иконку можно выбрать любую.
-      .col-md-3.col-sm-6.wow.fadeIn{"data-wow-delay" => ".6s"}
-        .about-content
-          %i.fa.fa-tablet.fa-4x
-          %h3 Преимущество 3
-          %p Описание преимущества. Иконку можно выбрать любую.
-      .col-md-3.col-sm-6.wow.fadeIn{"data-wow-delay" => ".8s"}
-        .about-content
-          %i.fa.fa-heart.fa-4x
-          %h3 Преимущество 4
-          %p Описание преимущества. Иконку можно выбрать любую.
+      - @advantages.each_with_index do |advantage, index|
+        .col-md-3.col-sm-6.wow.fadeIn{"data-wow-delay" => ".#{(index + 1) * 2}s"}
+          .about-content
+            = image_tag advantage.icon
+            %h3
+              = advantage.title
+            %p
+              = advantage.text

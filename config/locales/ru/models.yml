@@ -6,6 +6,7 @@ ru:
       blog: Блог
       proposition: Акция
       member: Член команды
+      advantage: Преимущество
     attributes:
       page:
         title: Название
@@ -42,6 +43,11 @@ ru:
         email: Email
         city: Город
         role: Роль на сайте
+      advantage:
+        title: Название
+        text: Описание
+        icon: Картинка
+        created_at: Дата создания
     errors:
       models:
         video:
