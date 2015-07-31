@@ -1,72 +1,35 @@
-.index
-  .blog
-    width: 100%
-    height: auto
-    float: left
-    border-bottom: 1px solid lightgray
-    margin-bottom: 10px
-    .title,
-    .body
-      float: left
-      margin-bottom: 15px
-    .title
-      font-size: 20px
-      font-family: bold_mic_font
-    .body
-      text-align: justify
-      img
-        width: 20%
-        float: left
-        margin-right: 15px
-  .blog:last-child
-    border: none
-.show
-  .title
-    font-size: 25px
-    font-family: bold_mic_font
-  .title,
-  .body
-    width: 100%
-  .title,
-  .body,
-  .date,
-  .social_buttons
-    float: left
-    height: auto
-  .date,
-  .social_buttons
-    width: 50%
-  .date
-    font-size: 12px
-    margin-bottom: 25px
-    float: left
-  .title
-    line-height: 30px
-  .social_buttons
-    text-align: right
-  .body
-    font-family: mic_font
-    img
-      &.main_photo
-        float: left
-        width: 50%
-        margin-right: 15px
-    border-bottom: 1px solid lightgray
-    margin-bottom: 15px
-    text-align: justify
-footer
-  border: none
+/*
+ * Pluso Buttons
+ */
 
-@media (max-width: 992px)
-  .show
-    .body
-      img
-        width: 100%
-  .index
-    .blog
-      height: auto
-      width: 100%
-      float: left
-      .body
-        img
-          width: 100%
+.pluso
+  a.pluso-more
+    display: none !important
+  .pluso-wrap
+    div
+      b
+        font-size: 1rem !important
+        line-height: 2rem !important
+        margin-right: 5px !important
+        margin-left: 2px !important
+        line-height: 32px !important
+.social_sharing
+  border-bottom: 1px solid lightgray
+  text-align: right
+  padding-bottom: 7px
+  .buttons
+    padding-right: 0
+.body
+  text-align: justify
+.topic-blog
+  text-align: justify
+  border-right: 1px solid lightgray
+  padding: 0
+  height: auto
+  &:last-child
+    border-right: none
+  .panel
+    margin-bottom: 0
+    .panel-body
+      p
+        font-size: 15px

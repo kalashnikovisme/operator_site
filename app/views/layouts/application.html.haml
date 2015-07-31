@@ -1,6 +1,10 @@
 %html{lang: "en"}
   = render 'layouts/web/shared/head'
   %body#page-top
-    = render 'layouts/web/shared/navbar'
-    = yield
-    = render 'layouts/web/shared/footer'
+    - if request.path == root_path
+      = yield
+      = render 'layouts/web/shared/footer'
+    - else
+      = render 'layouts/web/shared/navbar'
+      .container
+        = yield
