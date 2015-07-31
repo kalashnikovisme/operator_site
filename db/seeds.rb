@@ -3,7 +3,8 @@ blocks = [
   { 'Преимущества' => :advantages },
   { 'Портфолио' => :portfolio },
   { 'Наша команда' => :team },
-  { 'Рассылка' => :getting_email } ]
+  { 'Рассылка' => :getting_email },
+  { 'Блог' => :blogs } ]
 
 blocks.each_with_index do |b, index|
   title = b.keys.first
