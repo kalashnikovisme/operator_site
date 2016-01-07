@@ -16,7 +16,8 @@ gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer',  platforms: :ruby
+gem 'libv8', '3.16.14.13'
+gem 'therubyracer', platforms: :ruby
 gem 'less-rails'
 gem 'state_machine', git: "https://github.com/seuros/state_machine.git"
 gem 'i18n-js', git: 'https://github.com/fnando/i18n-js'
