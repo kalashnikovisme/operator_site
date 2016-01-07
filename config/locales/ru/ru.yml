@@ -35,3 +35,6 @@ ru:
       footer:
         phone: Телефон
         office: Офис
+    blogs:
+      show:
+        cut: Читать далее

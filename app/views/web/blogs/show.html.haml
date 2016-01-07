@@ -1,6 +1,23 @@
 = title @blog.title
 = stylesheet_link_tag 'web/blogs'
-.title
-  = @blog.title
-.body
-  != @blog.body
+.page-header
+  %h1
+    = @blog.title
+.row.body
+  .col-md-12
+    != @blog.body
+.row.social_sharing
+  .col-md-12.buttons
+    = render 'layouts/web/shared/social_sharing'
+.row
+  - @topic_blogs.each do |blog|
+    .col-md-4.topic-blog
+      .panel
+        .panel-heading
+          %h3
+            = blog.title
+        .panel-body
+          = raw(blog.lead)
+        = link_to blog_path(blog) do
+          .panel-footer
+            = t('.cut')
