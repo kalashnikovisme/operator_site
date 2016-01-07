@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.0'
+
 gem 'rails', '4.2'
 gem 'responders', '~> 2.0'
 gem 'pg'
@@ -52,7 +54,8 @@ gem 'turbolinks'
 gem 'coffee-rails'
 gem 'wysiwyg-rails'
 gem 'font-awesome-rails'
-gem 'auto_html'
+gem 'auto_html', github: 'dejan/auto_html', ref: 'ebf1572'
+gem 'sshkit', '1.5.1'
 
 group :development, :test do
   gem 'byebug'

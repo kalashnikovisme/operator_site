@@ -14,7 +14,7 @@ class VideoDecorator < Draper::Decorator
   def from_vimeo(width = 547, height = 308, autoplay = false)
     if model.link
       auto_html model.link do
-        vimeo width: width, height: height, autoplay: autoplay
+        vimeo width: width, height: height, autoplay: autoplay, allow_fullscreen: true
       end
     end
   end
