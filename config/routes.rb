@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   root to: 'web/welcome#index'
   scope module: :web do
     resources :blogs, only: [ :show, :index ]
