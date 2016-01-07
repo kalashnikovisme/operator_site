@@ -6,6 +6,7 @@
       = f.input :title, as: :string
       = f.input :text, as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }
       = f.input :order_number, input_html: { min: 1 }
+      = f.input :view_name, as: :string
       = f.input :state_event, as: :state_event
       = f.button :submit
       = link_to t('helpers.back'), admin_blocks_path, class: "btn"
