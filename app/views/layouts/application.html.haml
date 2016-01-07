@@ -1,8 +1,8 @@
 %html{lang: "en"}
   = render 'layouts/web/shared/head'
-  = render 'layouts/web/shared/vk_target'
-  = render 'layouts/web/shared/yandex_metrica_counter'
   %body#page-top
+    = render 'layouts/web/shared/vk_target'
+    = render 'layouts/web/shared/yandex_metrica_counter'
     - if request.path == root_path
       = yield
       = render 'layouts/web/shared/footer'
