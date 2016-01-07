@@ -474,6 +474,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   less-rails
+  libv8 (= 3.16.14.13)
   mini_magick
   momentjs-rails (>= 2.8.1)!
   monadic
@@ -510,3 +511,6 @@ DEPENDENCIES
   web-console (= 2.0.0.beta2)
   wrong
   wysiwyg-rails
+
+BUNDLED WITH
+   1.11.2
