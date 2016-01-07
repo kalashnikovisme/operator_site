@@ -1,5 +1,7 @@
 %html{lang: "en"}
   = render 'layouts/web/shared/head'
+  = render 'layouts/web/shared/vk_target'
+  = render 'layouts/web/shared/yandex_metrica_counter'
   %body#page-top
     - if request.path == root_path
       = yield
