@@ -40,7 +40,8 @@ class Web::Admin::VideosController < Web::Admin::ApplicationController
   private
 
   def move_videos(video)
-    conflict_video = Video.where(order_number: video.order_number).where.not(id: video.id).first
+    conflict_video = Video.where(order_number: video.order_number, project_type: video.project_type).
+                           where.not(id: video.id).first
     if conflict_video.present?
       conflict_video.order_number += 1
       conflict_video.save
