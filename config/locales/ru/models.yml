@@ -20,6 +20,7 @@ ru:
         project_type: Тип проекта
         order_number: Порядковый номер
         show_with_all: Показывать во вкладке ВСЕ
+        state: Статус
       blog:
         title: Название
         body: Тело блога

@@ -11,4 +11,5 @@ class Video < ActiveRecord::Base
   extend Enumerize
   enumerize :project_type, in: [ :weddings, :lovestory, :glans, :nikah, :extract, :family, :corporation, :portrait, :schools, :movie, :sde ], default: :weddings
   enumerize :show_with_all, in: [ :show, :hide ], default: :hide
+  enumerize :state, in: [ :show, :hide ], default: :show
 end
