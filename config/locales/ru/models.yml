@@ -7,6 +7,7 @@ ru:
       proposition: Акция
       member: Член команды
       advantage: Преимущество
+      city: Город
     attributes:
       page:
         title: Название
@@ -21,6 +22,8 @@ ru:
         order_number: Порядковый номер
         show_with_all: Показывать во вкладке ВСЕ
         state: Статус
+        city: Город
+        city_id: Город
       blog:
         title: Название
         body: Тело блога

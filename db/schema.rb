@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160406201434) do
+ActiveRecord::Schema.define(version: 20160406214256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,12 @@ ActiveRecord::Schema.define(version: 20160406201434) do
     t.text     "photo"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "cities", force: :cascade do |t|
+    t.text     "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "ckeditor_assets", force: :cascade do |t|
@@ -119,6 +125,7 @@ ActiveRecord::Schema.define(version: 20160406201434) do
     t.integer  "order_number"
     t.text     "show_with_all"
     t.text     "state"
+    t.integer  "city_id"
   end
 
 end

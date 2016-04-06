@@ -4,5 +4,6 @@ FactoryGirl.define do
     title { generate :string }
     description { generate :string }
     order_number { generate :integer }
+    city_id { City.last ? City.last.id : create(:city).id }
   end
 end

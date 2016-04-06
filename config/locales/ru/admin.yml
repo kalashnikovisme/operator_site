@@ -81,5 +81,6 @@ ru:
             advantages: Преимущества
             site: Сайт
             blocks: Блоки
+            cities: Города
           errors:
             some_errors_was_found: Найдено несколько ошибок
