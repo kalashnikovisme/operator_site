@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     namespace :admin do
       root to: 'welcome#index'
       resources :pages, except: :show
+      resources :cities, except: :show
       resources :blogs, except: :show
       resources :members, except: :show
       resources :users, except: :show

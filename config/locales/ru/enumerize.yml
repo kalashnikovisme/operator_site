@@ -17,3 +17,6 @@ ru:
       show_with_all:
         hide: Скрывать
         show: Показывать
+      state:
+        hide: Скрывать
+        show: Показывать

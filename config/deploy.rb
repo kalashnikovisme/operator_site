@@ -1,6 +1,6 @@
 # config valid only for Capistrano 3.2.1
 set :application, 'smilefilm'
-set :repo_url, 'git@github.com:kalashnikovisme/operator_site.git'
+set :repo_url, 'git@github.com:kalashnikovisme/smilefilm.git'
 
 set :rvm_type, :user
 set :rvm_ruby_version, 'ruby-2.3.0'

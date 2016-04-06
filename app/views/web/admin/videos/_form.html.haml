@@ -12,5 +12,7 @@
       = f.input :project_type
       = f.input :order_number, input_html: { min: 1 }
       = f.input :show_with_all
+      = f.input :state
+      = f.association :city, label_method: :title, value_method: :id
       = f.button :submit
       = link_to t('helpers.back'), admin_pages_path, class: "btn"
