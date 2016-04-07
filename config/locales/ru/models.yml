@@ -22,8 +22,7 @@ ru:
         order_number: Порядковый номер
         show_with_all: Показывать во вкладке ВСЕ
         state: Статус
-        city: Город
-        city_id: Город
+        cities: Города
       blog:
         title: Название
         body: Тело блога
