@@ -1,6 +1,6 @@
 = javascript_include_tag 'web/blocks'
 
-.row
+.row-fluid
   .col-md-10
     = simple_form_for @block, url: { controller: 'web/admin/blocks', action: action }, html: { class: 'form-horizontal' } do |f|
       = f.input :title, as: :string

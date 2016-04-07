@@ -1,5 +1,5 @@
 class Video < ActiveRecord::Base
-  belongs_to :city
+  has_and_belongs_to_many :cities
 
   validates :link, presence: true,
                    url: true
@@ -8,7 +8,6 @@ class Video < ActiveRecord::Base
   validates :project_type, presence: true
   validates :order_number, presence: true,
                            numericality: { greater_than: 0 }
-  validates :city_id, presence: true
 
   include VideoRepository
   extend Enumerize

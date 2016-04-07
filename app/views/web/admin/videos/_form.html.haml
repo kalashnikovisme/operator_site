@@ -1,9 +1,9 @@
 = javascript_include_tag 'web/videos'
 
-.row
+.row-fluid
   .col-lg-12
     = render 'layouts/web/admin/shared/errors', object: @video
-.row
+.row-fluid
   .col-md-10
     = simple_form_for @video, url: { controller: 'web/admin/videos', action: action }, html: { class: 'form-horizontal' } do |f|
       = f.input :title, as: :string
@@ -13,6 +13,6 @@
       = f.input :order_number, input_html: { min: 1 }
       = f.input :show_with_all
       = f.input :state
-      = f.association :city, label_method: :title, value_method: :id
+      = f.association :cities, input_html: { class: :select2 }
       = f.button :submit
       = link_to t('helpers.back'), admin_pages_path, class: "btn"

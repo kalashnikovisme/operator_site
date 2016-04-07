@@ -57,6 +57,7 @@ gem 'wysiwyg-rails'
 gem 'font-awesome-rails'
 gem 'auto_html', github: 'dejan/auto_html', ref: 'ebf1572'
 gem 'sshkit', '1.5.1'
+gem 'select2-rails'
 
 group :development, :test do
   gem 'byebug'
