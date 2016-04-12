@@ -4,7 +4,7 @@ class Web::WelcomeController < Web::ApplicationController
     @members = Member.all
     @banner = Banner.active.shuffle.first
     @videos = VideoDecorator.decorate_collection Video.showed.order('order_number ASC')
-    @showed_with_all_video = VideoDecorator.decorate_collection Video.showed_with_all
+    @showed_with_all_video = VideoDecorator.decorate_collection Video.showed_with_all.order('order_number ASC')
     @project_types = [:showed_with_all] + Video.project_type.values
     @user = UserEditType.new
     @advantages = Advantage.all
