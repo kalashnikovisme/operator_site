@@ -3,6 +3,7 @@ videoAdaptation = ->
     $('.portfolio').width('100%')
   if $(document).width() < 1025
     $('iframe').prop('width', "#{$('.portfolio').width() - 10}px") 
+    $('iframe').prop('height', "200px")
 
 $(document).ready ->
   $('#subscribe_completed').hide()
