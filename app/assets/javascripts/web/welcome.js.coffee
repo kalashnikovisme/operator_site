@@ -1,3 +1,9 @@
+videoAdaptation = ->
+  if $(document).width() < 450
+    $('.portfolio').width('100%')
+  if $(document).width() < 1025
+    $('iframe').prop('width', "#{$('.portfolio').width() - 10}px") 
+
 $(document).ready ->
   $('#subscribe_completed').hide()
   $('#subscribe_not_completed').hide()
@@ -24,4 +30,6 @@ $(document).ready ->
   setTimeout (->
     $('.portfolio').not('.showed_with_all').hide()
   ), 1000
+
+  videoAdaptation()
   return
